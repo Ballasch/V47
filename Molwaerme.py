@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import uncertainties.unumpy as unp
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
@@ -16,25 +17,27 @@ R = 8.31439
 
 t, R_P, R_G, U, I = np.genfromtxt("daten.dat", delimiter="	", unpack=True)
 
-#Widerstände in Temperatur umrechnen und in K umrechnen
-T_P = 0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15
-T_G = 0.00134 * (R_G * 1000)**2 + 2.296 * (R_G * 1000) - 243.02 + 273.15
+#Widerstände in Temperatur umrechnen und in K umrechnen mit 0 als Fehler
+T_P = unp.uarray(0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15, 0)
+T_G = unp.uarray(0.00134 * (R_G * 1000)**2 + 2.296 * (R_G * 1000) - 243.02 + 273.15, 0)
 
 #Mittlere Temperatur zwischen Gefäß und Probe bestimmen
 T = (T_P + T_G) / 2
 
-print(T_P, T_G, T)
+#print(T_P, T_G, T)
 
 #alpha bestimmen mit T
-alpha = -8.163 * 10**-9 * T**4 + 7.39 * 10**-6 * T**3 - 2.5293 * 10**-3 * T**2 + 0.40685 * T - 11.3349
+alpha = - ufloat(8.2, 0.7) * 10**-9 * T**4 + ufloat(7.4, 0.5) * 10**-6 * T**3 - ufloat(2.5, 0.1) * 10**-3 * T**2 + ufloat(0.41, 0.02) * T - ufloat(11.3, 0.6)
 
 print(alpha)
 
-#temporäre Arrays für C_p, C_v und T_plot erstellen
-C_p = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-C_v = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-T_plot = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-C_v_plot = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+#temporäre uArrays für C_p, C_v und T_plot erstellen
+err0 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+err1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+C_p = unp.uarray(err0, err0)
+C_v = unp.uarray(err0, err0)
+T_plot = unp.uarray(err1, err1)
+C_v_plot = unp.uarray(err1, err1)
 
 #C_p bestimmen (Formel: U * I * delta_t * M / m / delta_T)
 for x in range(31):
@@ -65,11 +68,11 @@ for x in range(10):
 
 #3R Linie zu markieren
 x_plot = np.linspace(75, 310, 2)
-R_plot = [3* R, 3 * R]
+R_plot = [3 * R, 3 * R]
 
 #C_v gegen T plotten
 plt.plot(x_plot, R_plot, 'b-', label='3R', linewidth=1)
-plt.plot(T_plot, C_v_plot, 'rx', label='Messwerte')
+plt.errorbar(unp.nominal_values(T_plot), unp.nominal_values(C_v_plot), yerr = unp.std_devs(C_v_plot), fmt='rx', label='Messwerte')
 plt.xlabel(r'$T \, / \, \mathrm{K}$')
 plt.ylabel(r'$C_v \, / \, \mathrm{J} \mathrm{Mol}^{-1} \mathrm{K}^{-1}$')
 plt.legend()
