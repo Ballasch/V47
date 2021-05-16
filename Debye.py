@@ -20,4 +20,12 @@ for x in range(11):
 
 Theta_D_gemittelt = Theta_D_gemittelt / 11
 
-print(Theta_D_gemittelt)
+#Mittelwertsfehler berechnen (Standartabweichung / sqrt(n))
+err = 0
+for x in range(11):
+    err = (Theta_D_gemittelt - Theta_D[x])**2 + err
+Theta_D_gemittelt_err = np.sqrt(err / (11**2 - 11))
+
+Debye = ufloat(Theta_D_gemittelt, Theta_D_gemittelt_err)
+
+print(Debye)
