@@ -53,7 +53,7 @@ for x in range(31):
 print(C_v)
 
 #Die größten Ausreißer ausfiltern also Wert 4, 5, 21 raus aus den Arrays
-#Für die ungefilterte Version Zeile 48 verwenden an Stelle von dem hier und die temporären Arrays vergrößern und in Zeile 72 C_v_plot durch C_v ersetzen
+#Für die ungefilterte Version Zeile 51 verwenden an Stelle von dem hier und in Zeile 39 err1 durch err0 2 mal ersetzen und in Zeile 75 C_v_plot durch C_v ersetzen
 for x in range(3):
     C_v_plot[x] = C_v[x]
     T_plot[x] = T[x]
@@ -74,7 +74,7 @@ R_plot = [3 * R, 3 * R]
 plt.plot(x_plot, R_plot, 'b-', label='3R', linewidth=1)
 plt.errorbar(unp.nominal_values(T_plot), unp.nominal_values(C_v_plot), yerr = unp.std_devs(C_v_plot), fmt='rx', label='Messwerte')
 plt.xlabel(r'$T \, / \, \mathrm{K}$')
-plt.ylabel(r'$C_v \, / \, \mathrm{J} \mathrm{Mol}^{-1} \mathrm{K}^{-1}$')
+plt.ylabel(r'$C_V \, / \, \mathrm{J} \, \mathrm{K}^{-1} \mathrm{mol}^{-1}$')
 plt.legend()
 plt.tight_layout()
-plt.savefig('C_v_gefiltert.pdf')
+plt.savefig('C_V_gefiltert.pdf')
