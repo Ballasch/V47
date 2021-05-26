@@ -24,7 +24,7 @@ Um die gemessenen Pt-100-Widerstände in die entsprechenden Temperaturen umzurec
     T = 0, \! 00134 \, R^2 + 2, \! 296 R - 243, \! 02
 \end{equation}
 
-Für $R$ wird der Widerstand in Ohm eingesetzt und die sich daraus ergebende Temperatur $T$ besitzt die Einheit °C.
+Für $R$ wird der Widerstand in Ohm eingesetzt und die sich daraus ergebende Temperatur $T$ besitzt die Einheit °C. Anschließend wird die Temperatur von der Probe $T_P$ und dem Zylinder $T_Z$ gemittelt und mit der gemittleten Temperatur $T$ wird im Folgenden gerechnet. 
 
 Aus $C_p$ lässt sich mit Formel \eqref{eq:C_V} $C_V$ bestimmen:
 
@@ -44,6 +44,7 @@ Die Werte von $\alpha$ sind nicht konstant sondern abhängig von der Temperatur 
 
 \begin{equation}
     \alpha (T) = a \cdot T^4 + b \cdot T^3 + c \cdot T^2 + d \cdot T + e
+    \label{eq:alpha}
 \end{equation}
 
 durch die Werte aus Abbildung \ref{fig:alpha} durchgeführt.
@@ -51,11 +52,11 @@ durch die Werte aus Abbildung \ref{fig:alpha} durchgeführt.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{build/alpha.PNG}
-    \caption{$\alpha$ in Abhängigkeit von $T$} %Quelle einfügen
+    \caption{$\alpha$ für verschiedene Temperaturen $T$} %Quelle einfügen
     \label{fig:alpha}
 \end{figure}
 
-Dies ergab folgende Werte für die Parameter
+Diese Ausgleichsrechnung wird mit Python und $scipy.optimize.curve\_fit$ erstellt und die Unsicherheiten mit $uncertainties.ufloat$ berechnet. Dies ergab folgende Werte für die Parameter
 
 \begin{align*}
     a &= (-8, \! 2 \pm 0, \! 7) \cdot 10^{-9} \, \mathrm{K}^{-5} \\
@@ -74,8 +75,99 @@ und folgenden Plot:
     \label{fig:alpha_plot}
 \end{figure}
 
-\subsection[Theoretische Bestimmung der Debye-Temperatur]{Bestimmung der Debye-Temperatur $\theta_D$}
+Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $C_V$ in Abhängigkeit von der Temperatur $T$ mit Formel \eqref{eq:C_V} berechnet werden. Die Werte für $C_p$ und $C_V$ sind in Tabelle \ref{tab:C} zu sehen.
+
+%Tabelle einfügen mit \label{tab:C}
+
+Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{build/C_v.pdf}
+    \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken}
+    \label{fig:C_V}
+\end{figure}
+
+In Abbildung \ref{fig:C_V} ist zu erkennen, dass es bei der Messung einige Messfehler aufgetreten. Deswegen werden die Werte Nummer 4, 5 und 21 aus Tabelle \ref{tab:C} als Messfehler herausgenommen und erneut in einem Diagramm gegen die Temperatur $T$ aufgetragen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{build/C_v_gefiltert.pdf}
+    \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken}
+    \label{fig:C_V_gefiltert}
+\end{figure}
+
+In den folgenden Abschnitten wird auch nur mit den Werten von $C_V$ aus Abbildung \ref{fig:C_V_gefiltert} gerechnet.
+
+\subsection[Experimentelle Bestimmung der Debye-Temperatur]{Experimentelle Bestimmung der Debye-Temperatur $\theta_D$}
 \label{sec:debye_temp}
+
+Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ für eine Temperatur von unter $170 \, \mathrm{K}$ betrachtet. Mit Hilfe der Debye-Funktion aus Quelle \cite{Anleitung} können die Werte für $\frac{\theta_D}{T}$ für die entsprechenden $C_V$ bestimmt werden. $\frac{\theta_D}{T}$ multipliziert mit der entsprechenden Temperatur $T$ ergibt dann die Debye Temperatur $\theta_D$. Die Werte für $T$, $C_V$, $\frac{\theta_D}{T}$ und $\theta_D$ sind in Tabelle \ref{tab:Debye} aufgetragen.
+
+%Tabelle mit \label{tab:Debye} hier einfügen
+
+Die verschiedenen Werte für die Debye-Temperatur $\theta_D$ ergeben gemittelt:
+
+\begin{equation*}
+    \theta_D = (329 \pm 19) \, \mathrm{K}
+    \label{eq:debye}
+\end{equation*}
+
+Der Mittelwertsfehler wurde mit Formel \eqref{eq:mittel} bestimmt.
+
+\begin{equation}
+    \sigma_{\overline{x}} = \frac{\sigma}{\sqrt{n}} = \sqrt{\frac{1}{n^2 - n} \cdot \sum\limits_{i=1}^{n} \left( \, \overline{x} - x_i \right)^2}
+    \label{eq:mittel}
+\end{equation}
+
+Dabei ist $\sigma_{\overline{x}}$ der Mittelwertsfehler, $n$ ist die Anzahl der Werte über die gemittelt wird und $\overline{x}$ ist der Mittelwert.
 
 \subsection[Theoretische Bestimmung der Debye-Temperatur]{Theoretische Bestimmung der Debye-Temperatur $\theta_D$}
 \label{sec:theo_debye_temp}
+
+Die Debye Temperatur kann auch theoretisch bestimmt werden. Dazu wird Formel ... aus Abschnitt \ref{sec:debye} verwendet. Für die Geschwindigkeiten $v_l$ und $v_{tr}$ werden die Werte aus Quelle \cite{Anleitung} genutzt, diese lauten:
+
+\begin{align*}
+    v_l &=  4, \! 7 \, \frac{\mathrm{km}}{\mathrm{s}} \\
+    v_{tr} &= 2, \! 26 \, \frac{\mathrm{km}}{\mathrm{s}}
+\end{align*}
+
+Die Teilchenanzahl $N_L$ kann wie folgt bestimmt werden:
+
+\begin{equation}
+    N_L = \frac{m}{M} \cdot N_A
+    \label{eq:N_L}
+\end{equation}
+
+$N_A = 6, \! 022 \cdot 10^ {23} \, \mathrm{mol}^{-1}$ ist dabei die Avogadro-Konstante. Für das Volumen $L^3$ gilt:
+
+\begin{equation}
+    L^3 = V_0 \cdot \frac{m}{M}
+    \label{eq:L}
+\end{equation}
+
+Mit Hilfe von Formel ... und Einsetzung von \eqref{eq:N_L} und \eqref{eq:L} ergibt sich dann mit der Schallgeschwindigkeit $v_s$ für die Debye Frequenz $\omega_D$ folgende Formel:
+
+\begin{equation}
+    \omega_D = \sqrt[3]{\frac{6 \pi^2 \, v_s^3 \,  N_L}{L^3}} = \sqrt[3]{\frac{6 \pi^2 \, v_s^3 \, N_A}{V_0}}
+    \label{eq:omega}
+\end{equation}
+
+Die Werte eingesetzt ergibt dann für die Debye-Frequenz folgenden Wert:
+
+\begin{equation*}
+    \omega_D = 4, \! 067 \cdot 10^{13} \, \mathrm{Hz} %Dieser Wert könnte falsch sein!
+\end{equation*}
+
+Die Debye-Temperatur $\theta_D$ lässt sich nun mit Formel \eqref{eq:debye-temp} bestimmen.
+
+\begin{equation}
+    \theta_D = \frac{\hbar}{k_B} \cdot \omega_D
+    \label{eq:debye-temp}
+\end{equation}
+
+Dabei ist $\hbar = 1, \! 055 \cdot 10^{-34} \, \mathrm{Js}$ das reduzierte planksche Wirkungsquantum und $k_B = 1, \! 381 \cdot 10^{-23} \, \frac{\mathrm{J}}{\mathrm{K}}$ ist die Boltzmann-Konstante. Damit ergibt sich für die Debye-Temperatur $\theta_D$ ein theoretischer Wert von:
+
+\begin{equation*}
+    \theta_D = 310, \! 81 \, \mathrm{K} %Dieser Wert könnte falsch sein!
+\end{equation*}
