@@ -12,6 +12,12 @@ Theta_D = Theta_T * T
 
 print(Theta_D)
 
+plt.plot(C_v, Theta_D, 'rx')
+plt.xlabel(r'$C_V \, / \, \mathrm{J} \, \mathrm{K}^{-1} \mathrm{mol}^{-1}$')
+plt.ylabel(r'$\theta_D \, / \, \mathrm{K}$')
+plt.tight_layout()
+plt.savefig('Theta_C_V.pdf')
+
 #Mitteln
 Theta_D_gemittelt = 0
 
