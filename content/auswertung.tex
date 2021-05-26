@@ -52,7 +52,7 @@ durch die Werte aus Abbildung \ref{fig:alpha} durchgeführt.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{build/alpha.PNG}
-    \caption{$\alpha$ für verschiedene Temperaturen $T$} %Quelle einfügen
+    \caption{$\alpha$ für verschiedene Temperaturen $T$}
     \label{fig:alpha}
 \end{figure}
 
@@ -77,13 +77,13 @@ und folgenden Plot:
 
 Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $C_V$ in Abhängigkeit von der Temperatur $T$ mit Formel \eqref{eq:C_V} berechnet werden. Die Werte für $C_p$ und $C_V$ sind in Tabelle \ref{tab:C} zu sehen.
 
-%Tabelle einfügen mit \label{tab:C}
+%Tabelle einfügen mit R_P, R_Z, T_P, T_Z, T, t, U, I, C_p, C_V und \label{tab:C} hier einfügen
 
 Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{build/C_v.pdf}
+    \includegraphics[width=0.8\textwidth]{build/C_V.pdf}
     \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken}
     \label{fig:C_V}
 \end{figure}
@@ -92,7 +92,7 @@ In Abbildung \ref{fig:C_V} ist zu erkennen, dass es bei der Messung einige Messf
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{build/C_v_gefiltert.pdf}
+    \includegraphics[width=0.8\textwidth]{build/C_V_gefiltert.pdf}
     \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken}
     \label{fig:C_V_gefiltert}
 \end{figure}
@@ -104,7 +104,7 @@ In den folgenden Abschnitten wird auch nur mit den Werten von $C_V$ aus Abbildun
 
 Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ für eine Temperatur von unter $170 \, \mathrm{K}$ betrachtet. Mit Hilfe der Debye-Funktion aus Quelle \cite{Anleitung} können die Werte für $\frac{\theta_D}{T}$ für die entsprechenden $C_V$ bestimmt werden. $\frac{\theta_D}{T}$ multipliziert mit der entsprechenden Temperatur $T$ ergibt dann die Debye Temperatur $\theta_D$. Die Werte für $T$, $C_V$, $\frac{\theta_D}{T}$ und $\theta_D$ sind in Tabelle \ref{tab:Debye} aufgetragen.
 
-%Tabelle mit \label{tab:Debye} hier einfügen
+%Tabelle mit T, C_V, theta_D/T, theta_D und \label{tab:Debye} hier einfügen
 
 Die verschiedenen Werte für die Debye-Temperatur $\theta_D$ ergeben gemittelt:
 
@@ -122,6 +122,20 @@ Der Mittelwertsfehler wurde mit Formel \eqref{eq:mittel} bestimmt.
 
 Dabei ist $\sigma_{\overline{x}}$ der Mittelwertsfehler, $n$ ist die Anzahl der Werte über die gemittelt wird und $\overline{x}$ ist der Mittelwert.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{build/Theta_C_V.pdf}
+    \caption{$\theta_D$ in Abhängigkeit von $C_V$}
+    \label{fig:Theta_C_V}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{build/Theta_T.pdf}
+    \caption{$\theta_D$ in Abhängigkeit von $T$}
+    \label{fig:Theta_T}
+\end{figure}
+
 \subsection[Theoretische Bestimmung der Debye-Temperatur]{Theoretische Bestimmung der Debye-Temperatur $\theta_D$}
 \label{sec:theo_debye_temp}
 
@@ -132,31 +146,17 @@ Die Debye Temperatur kann auch theoretisch bestimmt werden. Dazu wird Formel ...
     v_{tr} &= 2, \! 26 \, \frac{\mathrm{km}}{\mathrm{s}}
 \end{align*}
 
-Die Teilchenanzahl $N_L$ kann wie folgt bestimmt werden:
+Mit Hilfe von Formel ... ergibt sich dann mit den Geschwindigkeiten $v_l$ und $v_{tr}$ für die Debye-Frequenz $\omega_D$ folgende Formel:
 
 \begin{equation}
-    N_L = \frac{m}{M} \cdot N_A
-    \label{eq:N_L}
-\end{equation}
-
-$N_A = 6, \! 022 \cdot 10^ {23} \, \mathrm{mol}^{-1}$ ist dabei die Avogadro-Konstante. Für das Volumen $L^3$ gilt:
-
-\begin{equation}
-    L^3 = V_0 \cdot \frac{m}{M}
-    \label{eq:L}
-\end{equation}
-
-Mit Hilfe von Formel ... und Einsetzung von \eqref{eq:N_L} und \eqref{eq:L} ergibt sich dann mit der Schallgeschwindigkeit $v_s$ für die Debye Frequenz $\omega_D$ folgende Formel:
-
-\begin{equation}
-    \omega_D = \sqrt[3]{\frac{6 \pi^2 \, v_s^3 \,  N_L}{L^3}} = \sqrt[3]{\frac{6 \pi^2 \, v_s^3 \, N_A}{V_0}}
+    \omega_D = \sqrt[3]{\frac{18 \pi^2 N_A}{V_0} \cdot \left( \frac{1}{v_l^3} + \frac{2}{v_{tr}^3} \right)^{-1} }
     \label{eq:omega}
 \end{equation}
 
-Die Werte eingesetzt ergibt dann für die Debye-Frequenz folgenden Wert:
+$N_A = 6, \! 022 \cdot 10^ {23} \, \mathrm{mol}^{-1}$ ist dabei die Avogadro-Konstante. Die Werte eingesetzt ergibt dann für die Debye-Frequenz folgenden Wert:
 
 \begin{equation*}
-    \omega_D = 4, \! 067 \cdot 10^{13} \, \mathrm{Hz} %Dieser Wert könnte falsch sein!
+    \omega_D = 4, \! 349 \cdot 10^{13} \, \mathrm{Hz}
 \end{equation*}
 
 Die Debye-Temperatur $\theta_D$ lässt sich nun mit Formel \eqref{eq:debye-temp} bestimmen.
@@ -169,5 +169,5 @@ Die Debye-Temperatur $\theta_D$ lässt sich nun mit Formel \eqref{eq:debye-temp}
 Dabei ist $\hbar = 1, \! 055 \cdot 10^{-34} \, \mathrm{Js}$ das reduzierte planksche Wirkungsquantum und $k_B = 1, \! 381 \cdot 10^{-23} \, \frac{\mathrm{J}}{\mathrm{K}}$ ist die Boltzmann-Konstante. Damit ergibt sich für die Debye-Temperatur $\theta_D$ ein theoretischer Wert von:
 
 \begin{equation*}
-    \theta_D = 310, \! 81 \, \mathrm{K} %Dieser Wert könnte falsch sein!
+    \theta_D = 332, \! 102 \, \mathrm{K}
 \end{equation*}
