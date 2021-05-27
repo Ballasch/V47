@@ -47,7 +47,7 @@ Diese Rechnung ergibt
 \begin{align*}
     X_{\text{Einstein}} = \frac{\hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T}\right) -1} .
 \end{align*} 
-Die mittlere Energie im Einstein-Modell beträgt also 
+$Z$ stellt hier die Anzahl aller Zustände dar. Die mittlere Energie im Einstein-Modell beträgt also 
 \begin{align*}
     \langle u \rangle_{\text{Einstein}} = \frac{X}{Z} = \frac{\hbar \omega }{\exp \left( \frac{\hbar \omega}{k_B T}\right)}.
 \end{align*}
@@ -86,14 +86,14 @@ also ist die Zustandsdichte im Frequenzraum
     Z(\omega) d \omega&= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_t}\right)  d\omega 
 \end{align*}
 
-
+Diese Gleichung wird durch einsetzen der Debye-Frequenz zu
 \begin{align*}
-    Z(\omega) d \omega&= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega
+    Z(\omega) d \omega&= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega.
 \end{align*}
 
-
+Damit lässt sich die innere Energie 
 \begin{align*}
-    U = \int_0^{\omega_D} \frac{Z(\omega) d \omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+    U =  \int_0^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
 \end{align*}
 \begin{align*}
     C_{V,\text{Debye}}&= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
