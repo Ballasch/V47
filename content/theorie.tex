@@ -35,7 +35,7 @@ Das Modell von Albert Einstein befasst sich mit einer quantenmechanischen Näher
 dass alle Gitterschwingungen mit der gleichen Frequenz $\omega$ schwingen. Diese Gitterschwingungen werden des Weiteren auch gequantelt betrachtet und besitzen demnach ein 
 vielfaches von $\hbar \omega$ als Energie. Diese gequantelten Gitterschwindungen werden auch Phononen genannt. \\
 
-Die Energien sind im Festkörsper boltzmann-verteilt. Dadurch kann die Wahrscheinlichkeit, dass ein Phonon bei thermischem Gleichgewicht bei der Temperatur $T$ die Energie $n \hbar \omega$ besitzt, 
+Die Energien sind im Festkörper Boltzmann-verteilt. Dadurch kann die Wahrscheinlichkeit, dass ein Phonon bei thermischem Gleichgewicht bei der Temperatur $T$ die Energie $n \hbar \omega$ besitzt, 
 einfach mit der Formel
 \begin{align}
     \label{eqn:wn}
@@ -56,7 +56,7 @@ Abschließend ergibt sich die Molwärme zu
     \label{eqn:moleinstein}
     (C_V)_{\text{Einstein}} = 3 R \left( \frac{\hbar \omega}{k_B T}\right)^2 \frac{\exp \left(\frac{\hbar \omega}{k_B T}\right)}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)^2}.
 \end{align}
-Es ist festzustellen, dass die Molwärme im Einstein-Modell gegen den klassischen Wert $3 R$ bei hohen Temepraturen konvergiert. Bei niedrigen Temperaturen also $T \rightarrow 0$ läuft die Molwärme jedoch gegen $0$.
+Es ist festzustellen, dass die Molwärme im Einstein-Modell gegen den klassischen Wert $3 R$ bei hohen Temperaturen konvergiert. Bei niedrigen Temperaturen also $T \rightarrow 0$ läuft die Molwärme jedoch gegen $0$.
 \subsection{Debye-Gesetz}
 \label{sec:debye}
 
@@ -92,6 +92,7 @@ also ist die Zustandsdichte im Frequenzraum
 Die Gesamtenergie $U$ ergibt sich dann durch das Integrieren über alle Frequenzen
 
 \begin{align}
+    \label{eqn:udebye}
     U &= \int_0^{\omega_D} \frac{Z(\omega)}{\exp \left( \frac{\hbar \omega}{k_B T} - 1 \right)} d\omega.
 \end{align}
 
@@ -102,24 +103,24 @@ Abschließend ergibt sich die Molwärme zu
 \end{align}
 
 Damit lässt sich die innere Energie wie folgt berechnen:
-\begin{align*}
+\begin{align}
     U =  \int_0^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}.
-\end{align*}
+\end{align}
 wobei $\langle n(\omega)\rangle$ die Bose-Einstein-Statistik angibt. Die Ableitung nach $T$ der inneren Energie ergibt die Lösung für die Molwärme. Die Molwärme im Debye-Modell hat die Form
 \begin{align*}
     C_{V,\text{Debye}}= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
 \end{align*}
 Durch Einsetzen der Substitution 
-\begin{align*}
-    x = \frac{\hbar \omega}{k_B T} \\  \frac{\theta_D}{T} = \frac{\hbar \omega}{ k_B T}
-\end{align*}
+\begin{align}
+    \label{eqn:debyesubst}
+    x = \frac{\hbar \omega}{k_B T} \\  \frac{\theta_D}{T} = \frac{\hbar \omega_D}{ k_B T}
+\end{align}
 wird die Molwärme zu
-\begin{align*}
+\begin{align}
     C_{V,\text{Debye}} = 9 R \left(\frac{\theta_D}{T}\right)^3 \int_0^{\frac{\theta_D}{T}} \frac{x^4 \exp \left(x\right)}{ \left(\exp(x) -1\right)^2}.
-\end{align*}
+\end{align}
 Das $\theta_D$ wird die Debye-Temperatur genannt. Die Molwärme im Debye-Modell bei großen Temperaturen also $x<<1$ kovnergiert gegen $3 R$, die klassischen Näherung. Bei kleinen Temperaturen ist die Molwärme 
 jedoch proportional zu $T^3$. 
 \subsection{Weitere Anmerkungen}
 Es ist wichtig zu erwähnen, dass die Leitungselektronen im Festkörper ebenfalls einen Beitrag zur Molwärme leisten. Vor allem bei niedrigen Temperaturen spielt der Einfluss der Leitungselektronen eine größere Rolle. 
 Die Elektronen sind nach der Fermi-Dirac-Statistik verteilt. Daraus folgt, dass der Einfluss auf die Molwärme der Leitungselektronen proportional zu $T$ sein muss. \\
-Des Weiteren wurde in den Rechnungen zum Debye-Modell nicht zwischen den longitudianelen und transversalen Geschwindigkeiten unterschieden. Dies ist jedoch eine eher ungenaue Näherung.

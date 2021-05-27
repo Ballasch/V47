@@ -16,5 +16,94 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Anleitung}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsanleitung zu Versuch V47: Temperaturabhängigkeit der Molwärme von Festkörpern}
+    \endentry
+    \entry{kappa}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Literaturwert für das Kompressionsmodul von Cu}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.periodensystem-online.de/index.php?el=29&id=modify
+      \endverb
+      \verb{url}
+      \verb http://www.periodensystem-online.de/index.php?el=29&id=modify
+      \endverb
+    \endentry
+    \entry{V0}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Literaturwert für das Molvolumen von Cu}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Kupfer
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Kupfer
+      \endverb
+    \endentry
+    \entry{h_quer}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Literaturwert für das reduzierte planksche Wirkungsquantum}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Plancksches_Wirkungsquantum#Reduziertes_Plancksches_Wirkungsquantum
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Plancksches_Wirkungsquantum#Reduziertes_Plancksches_Wirkungsquantum
+      \endverb
+    \endentry
+    \entry{k_B}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Literaturwert für die Boltzmann-Konstante}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
