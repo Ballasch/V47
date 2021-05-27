@@ -30,5 +30,72 @@ In der klassischen Betrachtung ist die Molwärme also sowohl Material als auch T
 \subsection{Einstein-Gesetz}
 \label{sec:einstein}
 %Rest kommt noch
+
+Das Modell von Albert Einstein befasst sich mit einer quantenmechanischen Näherung zur Bestimmung der Molwärme. In dem Einstein-Modell ist die Annahme, 
+dass alle Gitterschwingungen mit der gleichen Frequenz $\omega$ schwingen. Diese Gitterschwingungen werden des Weiteren auch gequantelt betrachtet und besitzen demnach ein 
+vielfaches von $\hbar \omega$ als Energie. Diese gequantelten Gitterschwindungen werden auch Phononen genannt. \\
+
+Die Energien sind im Festkörsper boltzmann-verteilt. Dadurch kann die Wahrscheinlichkeit, dass ein Phonon bei thermischem Gleichgewicht bei der Temperatur $T$ die Energie $n \hbar \omega$ besitzt, 
+einfach mit der Formel
+\begin{align*}
+    %\label{eqn:wn}
+    W(n) = \exp{\frac{-n \hbar \omega}{k_B T}}
+\end{align*}
+berechnet werden. \\
+Der Erwartungswert $X$ der Energie wird berechnet, indem die über alle $n$ zwischen $0$ und $\infty$ mit den entsprechenden $W(n)$ Koeffizienten summiert wird. 
+Diese Rechnung ergibt
+\begin{align*}
+    X_{\text{Einstein}} = \frac{\hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T}\right) -1} .
+\end{align*} 
+Die mittlere Energie im Einstein-Modell beträgt also 
+\begin{align*}
+    \langle u \rangle_{\text{Einstein}} = \frac{X}{Z} = \frac{\hbar \omega }{\exp \left( \frac{\hbar \omega}{k_B T}\right)}.
+\end{align*}
+Abschließend ergibt sich die Molwärme zu 
+\begin{align}
+    \label{eqn:moleinstein}
+    (C_V)_{\text{Einstein}} = 3 R \left( \frac{\hbar \omega}{k_B T}\right)^2 \frac{\exp \left(\frac{\hbar \omega}{k_B T}\right)}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)^2}.
+\end{align}
+
 \subsection{Debye-Gesetz}
 \label{sec:debye}
+
+Im Vergleich zum Einstein-Modell, wird im debyeschem Modell angenommen, dass Phononen bis zu einer Grenzfrequenz $\omega_D$ eine Verteilung von Frequenzen besitzen können. 
+Eine Grenzfrequenz existiert, weil ein Festkörper eine endlich große Dimension und somit auch nur endlich viele Eigenschwingungen hat. Diese Grenzfrequenz wird Debye-Frequenz genannt. Es wird auch angenommen, 
+dass bis zu der Grenzfrequenz eine lineare Dispersionsrelations, also $\omega = \nu_s k$, gegeben ist. 
+Die Anzahl der Eigenschwingungen beträgt $3 N_L$ wobei $N_L$ die Loschmidt-Konstante darstellt. Die Loschmidt-Konstante gibt die Anzahl $N$ der Moleküle pro Volumen $V$ eines idealen Gases 
+bei einer Temperatur von $T = 273,15 \si{\kelvin}$ und einem Druck von $p = 101,325 \si{\kilo\pascal}$ an also:
+\begin{align*}
+    N_L = \frac{N}{V} = \frac{p}{k_B T}.
+\end{align*}
+Wird die Frequenzverteilung $Z(\omega)$ bis zu der Grenzfrequenz $\omega_D$ integriert, so sollte also $3 N_L$ rauskommen
+\begin{align*}
+    \int_0^{\omega_D} Z(\omega) d\omega = 3 N_L .
+\end{align*}
+Um Einblicke aus diesem Integral zu erhalten, ist es nützlich die Zustandsdichte $Z(\omega)$ im $k$-Raum zu schreiben. Das geht über die Umformung 
+\begin{align*}
+    &Z(\omega) d\omega = Z(k) d k\\
+    \Leftrightarrow& Z(\omega) = Z(k) \frac{d k}{d\omega}
+\end{align*}
+Die Zustandsdichte im $k$-Raum ist im dreidimensionalem Fall immer 
+\begin{align*}
+    Z(k) = \frac{L^3}{\left(2 \pi\right)^3} \frac{4 \pi k^3}{3} = \frac{V}{8 \pi^3} \frac{4 \pi k^3}{3}
+\end{align*}
+also ist die Zustandsdichte im Frequenzraum
+\begin{align*}
+    Z(\omega) d \omega&= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_t}\right)  d\omega 
+\end{align*}
+
+
+\begin{align*}
+    Z(\omega) d \omega&= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega
+\end{align*}
+
+
+\begin{align*}
+    U = \int_0^{\omega_D} \frac{Z(\omega) d \omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+\end{align*}
+\begin{align*}
+    C_{V,\text{Debye}}&= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+\end{align*}
+\subsection{Vergleich zwischen den drei Modellen}
