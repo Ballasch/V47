@@ -79,15 +79,14 @@ Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $
 
 %Tabelle einfügen mit R_P, R_Z, T_P, T_Z, T, t, U, I, C_p, C_V und \label{tab:C} hier einfügen
 \begin{table}
-    \label{tab:C}
     \centering
     \caption{Messdaten und Berechnungen für Bestimmung von $C_p$ und $C_V$. }
     \csvreader[tabular = c c c c c,
     head=true,
-    table head=$t \:/\: \si{\minute}$ & $R_P$ &  $R_Z$ & $ U \:/\: \si{Einheit}$ & $I \:/\: \si{Einheit}$\\ \midrule,
+    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ & $ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$\\ \midrule,
     late after line= \\]
     {datendat-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv}
-    
+    \label{tab:C}
 \end{table}
 Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
 
@@ -115,6 +114,16 @@ In den folgenden Abschnitten wird auch nur mit den Werten von $C_V$ aus Abbildun
 Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ für eine Temperatur von unter $170 \, \mathrm{K}$ betrachtet. Mit Hilfe der Debye-Funktion aus Quelle \cite{Anleitung} können die Werte für $\frac{\theta_D}{T}$ für die entsprechenden $C_V$ bestimmt werden. $\frac{\theta_D}{T}$ multipliziert mit der entsprechenden Temperatur $T$ ergibt dann die Debye Temperatur $\theta_D$. Die Werte für $T$, $C_V$, $\frac{\theta_D}{T}$ und $\theta_D$ sind in Tabelle \ref{tab:Debye} aufgetragen.
 
 %Tabelle mit T, C_V, theta_D/T, theta_D und \label{tab:Debye} hier einfügen
+\begin{table}
+    \centering
+    \caption{Messdaten zur Berechnungen von $\theta_D$. }
+    \csvreader[tabular = c c c,
+    head=true,
+    table head=$C_V \:/\: \si{EinheitFehlt}$ & $T \:/\: \si{\kelvin} $ &  $\frac{\theta_D}{T}$ \\ \midrule,
+    late after line= \\]
+    {C_v_und_T-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii}
+    \label{tab:Debye}
+\end{table}
 
 Die verschiedenen Werte für die Debye-Temperatur $\theta_D$ ergeben gemittelt:
 

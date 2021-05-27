@@ -534,6 +534,7 @@ INPUT ./build/C_V.pdf
 INPUT ./build/C_V_gefiltert.pdf
 INPUT ./build/C_V_gefiltert.pdf
 INPUT ./build/C_V_gefiltert.pdf
+INPUT ./C_v_und_T-copy.csv
 INPUT ./build/Theta_C_V.pdf
 INPUT ./build/Theta_C_V.pdf
 INPUT ./build/Theta_C_V.pdf

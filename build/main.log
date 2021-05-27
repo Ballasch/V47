@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.14)  27 MAY 2021 15:32
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.5.14)  27 MAY 2021 19:14
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1491,7 +1491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--1
  []
 
 [5]
-<build/Aufbau.PNG, id=86, 392.21532pt x 517.18219pt>
+<build/Aufbau.PNG, id=87, 392.21532pt x 517.18219pt>
 File: build/Aufbau.PNG Graphic file (type png)
 <use build/Aufbau.PNG>
 Package luatex.def Info: build/Aufbau.PNG  used on input line 12.
@@ -1535,7 +1535,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 4.
 
 [8]
-<build/alpha.PNG, id=115, 399.74344pt x 113.67468pt>
+<build/alpha.PNG, id=117, 399.74344pt x 113.67468pt>
 File: build/alpha.PNG Graphic file (type png)
 <use build/alpha.PNG>
 Package luatex.def Info: build/alpha.PNG  used on input line 54.
@@ -1544,53 +1544,36 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00053pt on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 55.
-<build/alpha.pdf, id=118, 462.528pt x 346.896pt>
+<build/alpha.pdf, id=120, 462.528pt x 346.896pt>
 File: build/alpha.pdf Graphic file (type pdf)
 <use build/alpha.pdf>
 Package luatex.def Info: build/alpha.pdf  used on input line 73.
 (luatex.def)             Requested size: 334.60571pt x 250.96648pt.
  [9<./build/alpha.PNG>]
-
-Package caption Warning: \label without proper reference on input line 82.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:C' on page 10 undefined on input line 78.
-
-<build/C_V.pdf, id=132, 462.528pt x 346.896pt>
+<build/C_V.pdf, id=134, 462.528pt x 346.896pt>
 File: build/C_V.pdf Graphic file (type pdf)
 <use build/C_V.pdf>
-Package luatex.def Info: build/C_V.pdf  used on input line 96.
+Package luatex.def Info: build/C_V.pdf  used on input line 95.
 (luatex.def)             Requested size: 334.60571pt x 250.96648pt.
-[10<./build/alpha.pdf>] [11]
-
-Package caption Warning: \label without proper reference on input line 82.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:C' on page 12 undefined on input line 101.
-
-<build/C_V_gefiltert.pdf, id=183, 462.528pt x 346.896pt>
+ [10<./build/alpha.pdf>] [11]
+<build/C_V_gefiltert.pdf, id=185, 462.528pt x 346.896pt>
 File: build/C_V_gefiltert.pdf Graphic file (type pdf)
 <use build/C_V_gefiltert.pdf>
-Package luatex.def Info: build/C_V_gefiltert.pdf  used on input line 105.
+Package luatex.def Info: build/C_V_gefiltert.pdf  used on input line 104.
 (luatex.def)             Requested size: 334.60571pt x 250.96648pt.
-[12<./build/C_V.pdf>]
-
-LaTeX Warning: Reference `tab:Debye' on page 13 undefined on input line 115.
-
-<build/Theta_C_V.pdf, id=231, 462.528pt x 346.896pt>
+ [12<./build/C_V.pdf>]
+<build/Theta_C_V.pdf, id=234, 462.528pt x 346.896pt>
 File: build/Theta_C_V.pdf Graphic file (type pdf)
 <use build/Theta_C_V.pdf>
-Package luatex.def Info: build/Theta_C_V.pdf  used on input line 137.
+Package luatex.def Info: build/Theta_C_V.pdf  used on input line 146.
 (luatex.def)             Requested size: 292.7776pt x 219.59367pt.
-[13<./build/C_V_gefiltert.pdf>]
-<build/Theta_T.pdf, id=275, 462.528pt x 346.896pt>
+ [13<./build/C_V_gefiltert.pdf>]
+<build/Theta_T.pdf, id=279, 462.528pt x 346.896pt>
 File: build/Theta_T.pdf Graphic file (type pdf)
 <use build/Theta_T.pdf>
-Package luatex.def Info: build/Theta_T.pdf  used on input line 144.
+Package luatex.def Info: build/Theta_T.pdf  used on input line 153.
 (luatex.def)             Requested size: 292.7776pt x 219.59367pt.
- [14<./build/Theta_C_V.pdf><./build/Theta_T.pdf>]) (./content/diskussion.tex) [15]
+ [14<./build/Theta_C_V.pdf>] [15<./build/Theta_T.pdf>]) (./content/diskussion.tex) [16]
 Overfull \hbox (6.10023pt too wide) in paragraph at lines 24--24
 []\TU/lmr/m/it/10.95 Li-te-ra-tur-wert für das Kom-pres-si-ons-mo-dul von Cu\TU/lmr/m/n/10.95 . \TU/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n/10.95 http : / / www . periodensystem -
  []
@@ -1600,34 +1583,30 @@ Overfull \hbox (11.55374pt too wide) in paragraph at lines 24--24
 \TU/lmtt/m/n/10.95 wikipedia . org / wiki / Plancksches _ Wirkungsquantum # Reduziertes _ Plancksches _
  []
 
-[16] (./build/main.aux)
+[17] (./build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 388D52A7823A98ECE64C06C8ABE122D8;14580.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 962D1FFD29B9D42A57A5E0D15F9B6FAF;14967.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 9F7665AD4A368B58E2215F8303AAB847;1962.
+(rerunfilecheck)             Checksum: E3EDA1BB70EF31BE9CFC7473215BA3E7;1962.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 36990 strings out of 478388
+ 37001 strings out of 478388
  100000,1977958 words of node,token memory allocated
  894 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 75 attribute, 81 glue_spec, 39 attribute_list, 2 write, 4 pdf_action nodes
-   avail lists: 1:1,2:1362,3:221,4:51,5:669,6:51,7:5370,8:106,9:1134,10:28,11:520,12:1
- 55748 multiletter control sequences out of 65536+600000
- 195 fonts using 71355847 bytes
+   avail lists: 1:1,2:1386,3:221,4:52,5:689,6:51,7:5398,8:106,9:1152,10:28,11:522,12:1
+ 55754 multiletter control sequences out of 65536+600000
+ 195 fonts using 71356151 bytes
  113i,14n,118p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/xits/XITSMath-Regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (16 pages, 221849 bytes).
+Output written on main.pdf (17 pages, 222944 bytes).
 
-PDF statistics: 512 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 131072)
+PDF statistics: 520 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 131072)
  121 words of extra memory for PDF output out of 10000 (max. 100000000)
 
