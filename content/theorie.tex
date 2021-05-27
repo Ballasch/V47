@@ -97,6 +97,14 @@ Damit lässt sich die innere Energie wie folgt berechnen:
 \end{align*}
 wobei $\langle n(\omega)\rangle$ die Bose-Einstein-Statistik angibt. Die Ableitung nach $T$ der inneren Energie ergibt die Lösung für die Molwärme. Die Molwärme im Debye-Modell hat die Form
 \begin{align*}
-    C_{V,\text{Debye}}&= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+    C_{V,\text{Debye}}= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+\end{align*}
+Durch Einsetzen der Substitution 
+\begin{align*}
+    x = \frac{\hbar \omega}{k_B T} &  \frac{\theta_D}{T} = \frac{\hbar \omega}{ k_B T}
+\end{align*}
+wird die Molwärme zu
+\begin{align*}
+    C_{V,\text{Debye}} = 9 R \left(\frac{\theta_D}{T}\right)^3 \int_0^{\frac{\theta_D}{T}} \frac{x^4 \exp \left(x\right)}{ \left(\exp(x) -1\right)^2}.
 \end{align*}
 \subsection{Vergleich zwischen den drei Modellen}
