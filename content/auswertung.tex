@@ -33,7 +33,7 @@ Aus $C_p$ lässt sich mit Formel \eqref{eq:C_V} $C_V$ bestimmen:
     \label{eq:C_V}
 \end{equation}
 
-$\alpha$ ist dabei der lineare Ausdehnungskoeffizient, $\kappa$ ist das Kompressionsmodul und $V_0$ ist das Molvolumen. Für Kupfer können folgende Werte für $\kappa$ und $V_0$ verwendet werden:
+$\alpha$ ist dabei der lineare Ausdehnungskoeffizient, $\kappa$ \cite{kappa} ist das Kompressionsmodul und $V_0$ \cite{V0} ist das Molvolumen. Für Kupfer können folgende Werte für $\kappa$ und $V_0$ verwendet werden:
 
 \begin{align*}
     \kappa &= 140 \, \mathrm{GPa} \\
@@ -52,7 +52,7 @@ durch die Werte aus Abbildung \ref{fig:alpha} durchgeführt.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{build/alpha.PNG}
-    \caption{$\alpha$ für verschiedene Temperaturen $T$}
+    \caption{$\alpha$ für verschiedene Temperaturen $T$ \cite{Anleitung}}
     \label{fig:alpha}
 \end{figure}
 
@@ -139,14 +139,14 @@ Dabei ist $\sigma_{\overline{x}}$ der Mittelwertsfehler, $n$ ist die Anzahl der 
 \subsection[Theoretische Bestimmung der Debye-Temperatur]{Theoretische Bestimmung der Debye-Temperatur $\theta_D$}
 \label{sec:theo_debye_temp}
 
-Die Debye Temperatur kann auch theoretisch bestimmt werden. Dazu wird Formel ... aus Abschnitt \ref{sec:debye} verwendet. Für die Geschwindigkeiten $v_l$ und $v_{tr}$ werden die Werte aus Quelle \cite{Anleitung} genutzt, diese lauten:
+Die Debye Temperatur kann auch theoretisch bestimmt werden. Dazu wird Formel \eqref{eqn:Z_integral} aus Abschnitt \ref{sec:debye} verwendet. Für die Geschwindigkeiten $v_l$ und $v_{tr}$ werden die Werte aus Quelle \cite{Anleitung} genutzt, diese lauten:
 
 \begin{align*}
     v_l &=  4, \! 7 \, \frac{\mathrm{km}}{\mathrm{s}} \\
     v_{tr} &= 2, \! 26 \, \frac{\mathrm{km}}{\mathrm{s}}
 \end{align*}
 
-Mit Hilfe von Formel ... ergibt sich dann mit den Geschwindigkeiten $v_l$ und $v_{tr}$ für die Debye-Frequenz $\omega_D$ folgende Formel:
+Mit Hilfe von Formel \eqref{eqn:Z} ergibt sich dann mit den Geschwindigkeiten $v_l$ und $v_{tr}$ für die Debye-Frequenz $\omega_D$ folgende Formel:
 
 \begin{equation}
     \omega_D = \sqrt[3]{\frac{18 \pi^2 N_A}{V_0} \cdot \left( \frac{1}{v_l^3} + \frac{2}{v_{tr}^3} \right)^{-1} }
@@ -166,7 +166,7 @@ Die Debye-Temperatur $\theta_D$ lässt sich nun mit Formel \eqref{eq:debye-temp}
     \label{eq:debye-temp}
 \end{equation}
 
-Dabei ist $\hbar = 1, \! 055 \cdot 10^{-34} \, \mathrm{Js}$ das reduzierte planksche Wirkungsquantum und $k_B = 1, \! 381 \cdot 10^{-23} \, \frac{\mathrm{J}}{\mathrm{K}}$ ist die Boltzmann-Konstante. Damit ergibt sich für die Debye-Temperatur $\theta_D$ ein theoretischer Wert von:
+Dabei ist $\hbar = 1, \! 055 \cdot 10^{-34} \, \mathrm{Js}$ \cite{h_quer} das reduzierte planksche Wirkungsquantum und $k_B = 1, \! 381 \cdot 10^{-23} \, \frac{\mathrm{J}}{\mathrm{K}}$ \cite{k_B} ist die Boltzmann-Konstante. Damit ergibt sich für die Debye-Temperatur $\theta_D$ ein theoretischer Wert von:
 
 \begin{equation*}
     \theta_D = 332, \! 102 \, \mathrm{K}
