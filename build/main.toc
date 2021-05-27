@@ -11,22 +11,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Debye-Gesetz}{4}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Vergleich zwischen den drei Modellen}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Weitere Anmerkungen}{5}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Aufbau und Durchführung}{5}{section.3}%
+\contentsline {section}{\numberline {3}Aufbau und Durchführung}{6}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Aufbau}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Aufbau}{6}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Durchführung}{7}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}%
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Bestimmung von $C_p$ und $C_V$}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Bestimmung von $C_p$ und $C_V$}{8}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Experimentelle Bestimmung der Debye-Temperatur}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Experimentelle Bestimmung der Debye-Temperatur}{12}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Theoretische Bestimmung der Debye-Temperatur}{12}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Theoretische Bestimmung der Debye-Temperatur}{13}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{13}{section.5}%
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
