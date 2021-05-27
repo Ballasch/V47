@@ -78,7 +78,17 @@ und folgenden Plot:
 Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $C_V$ in Abhängigkeit von der Temperatur $T$ mit Formel \eqref{eq:C_V} berechnet werden. Die Werte für $C_p$ und $C_V$ sind in Tabelle \ref{tab:C} zu sehen.
 
 %Tabelle einfügen mit R_P, R_Z, T_P, T_Z, T, t, U, I, C_p, C_V und \label{tab:C} hier einfügen
-
+\begin{table}
+    \label{tab:C}
+    \centering
+    \caption{Messdaten und Berechnungen für Bestimmung von $C_p$ und $C_V$. }
+    \csvreader[tabular = c c c c c,
+    head=true,
+    table head=$t \:/\: \si{\minute}$ & $R_P$ &  $R_Z$ & $ U \:/\: \si{Einheit}$ & $I \:/\: \si{Einheit}$\\ \midrule,
+    late after line= \\]
+    {datendat-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv}
+    
+\end{table}
 Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
 
 \begin{figure}[H]
