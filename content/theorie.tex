@@ -91,11 +91,12 @@ Diese Gleichung wird durch einsetzen der Debye-Frequenz zu
     Z(\omega) d \omega&= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega.
 \end{align*}
 
-Damit lässt sich die innere Energie 
+Damit lässt sich die innere Energie wie folgt berechnen:
 \begin{align*}
-    U =  \int_0^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+    U =  \int_0^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}.
 \end{align*}
+wobei $\langle n(\omega)\rangle$ die Bose-Einstein-Statistik angibt. Die Ableitung nach $T$ der inneren Energie ergibt die Lösung für die Molwärme. Die Molwärme im Debye-Modell hat die Form
 \begin{align*}
-    C_{V,\text{Debye}}&= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+    C_{V,\text{Debye}}&= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
 \end{align*}
 \subsection{Vergleich zwischen den drei Modellen}

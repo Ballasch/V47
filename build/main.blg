@@ -1,20 +1,20 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/main.blg'
-[51] biber:340> INFO - === Thu May 27, 2021, 03:17:27
-[65] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[122] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[133] Biber.pm:4340> INFO - Processing section 0
-[140] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[145] bibtex.pm:1689> INFO - LaTeX decoding ...
-[146] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[149] Biber.pm:4531> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[152] bibtex.pm:1689> INFO - LaTeX decoding ...
-[156] bibtex.pm:1494> INFO - Found BibTeX data source 'programme.bib'
-[156] Utils.pm:395> WARN - I didn't find a database entry for 'Anleitung' (section 0)
-[161] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[161] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[162] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[162] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[162] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[163] bbl.pm:757> INFO - Output to build/main.bbl
-[163] Biber.pm:128> INFO - WARNINGS: 1
+[51] biber:340> INFO - === Thu May 27, 2021, 13:52:40
+[66] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[123] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[135] Biber.pm:4340> INFO - Processing section 0
+[145] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[149] bibtex.pm:1689> INFO - LaTeX decoding ...
+[150] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[151] Biber.pm:4531> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[155] bibtex.pm:1689> INFO - LaTeX decoding ...
+[158] bibtex.pm:1494> INFO - Found BibTeX data source 'programme.bib'
+[159] Utils.pm:395> WARN - I didn't find a database entry for 'Anleitung' (section 0)
+[164] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[164] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[164] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[164] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[165] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[165] bbl.pm:757> INFO - Output to build/main.bbl
+[166] Biber.pm:128> INFO - WARNINGS: 1
