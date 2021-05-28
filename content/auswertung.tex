@@ -81,11 +81,11 @@ Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $
 \begin{table}
     \centering
     \caption{Messdaten und Berechnungen für Bestimmung von $C_p$ und $C_V$. }
-    \csvreader[tabular = c c c c c,
+    \csvreader[tabular = c c c c c c c c|c c,
     head=true,
-    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ & $ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$\\ \midrule,
+    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\milli\ampere}$ &$T_Z \:/\: \si{\milli\ampere}$ & $ \langle T\rangle \:/\: \si{\milli\ampere}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
     late after line= \\]
-    {datendat-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv}
+    {datendat-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv& \csvcolvi& \csvcolvii & \csvcolviii & \csvcolix & \csvcolx}
     \label{tab:C}
 \end{table}
 Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
@@ -119,7 +119,7 @@ Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ f
     \caption{Messdaten zur Berechnungen von $\theta_D$. }
     \csvreader[tabular = c c c,
     head=true,
-    table head=$C_V \:/\: \si{\per\kelvin\per\mole}$ & $T \:/\: \si{\kelvin} $ &  $\frac{\theta_D}{T}$ \\ \midrule,
+    table head=$C_V \:/\: \si{\joule\per\kelvin\per\mole}$ & $T \:/\: \si{\kelvin} $ &  $\frac{\theta_D}{T}$ \\ \midrule,
     late after line= \\]
     {C_v_und_T-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii}
     \label{tab:Debye}

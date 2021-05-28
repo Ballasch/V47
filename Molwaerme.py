@@ -3,7 +3,7 @@ import numpy as np
 import uncertainties.unumpy as unp
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
-
+import csv 
 #Masse Probe in kg
 m = 0.342
 #Molmasse Kupfer in kg/mol
@@ -52,6 +52,12 @@ for x in range(31):
 
 print(C_v)
 
+with open('datendat-copy.csv', 'w') as csvfile:
+    writer = csv.writer(csvfile, delimiter=',')
+    writer.writerow(['t','R_P', 'R_Z', 'T_P', 'T_Z', 'T',  'U', 'I', 'C_p', 'C_V'])
+    rows = zip(t,R_P, R_G, unp.nominal_values(T_P), unp.nominal_values(T_G), unp.nominal_values(T), U, I, unp.nominal_values(C_p), unp.nominal_values(C_v))
+    writer.writerows(rows)
+
 #Die größten Ausreißer ausfiltern also Wert 4, 5, 21 raus aus den Arrays
 #Für die ungefilterte Version Zeile 51 verwenden an Stelle von dem hier und in Zeile 39 err1 durch err0 2 mal ersetzen und in Zeile 75 C_v_plot durch C_v ersetzen
 for x in range(3):
@@ -70,6 +76,10 @@ for x in range(10):
 x_plot = np.linspace(75, 310, 2)
 R_plot = [3 * R, 3 * R]
 
+def debye():
+    return 0
+def einstein():
+    return 0
 #C_v gegen T plotten
 plt.plot(x_plot, R_plot, 'b-', label='3R', linewidth=1)
 plt.errorbar(unp.nominal_values(T_plot), unp.nominal_values(C_v_plot), yerr = unp.std_devs(C_v_plot), fmt='rx', label='Messwerte')

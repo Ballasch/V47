@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1622135585 "build/main.bcf" "build/main.bbl" "build/main" 1622162459
-  "build/main.bcf" 1622162459 107489 e22eaf50768e517009d8b7445b806c4e "lualatex"
+["biber build/main"] 1622135585 "build/main.bcf" "build/main.bbl" "build/main" 1622210141
+  "build/main.bcf" 1622210141 107489 e22eaf50768e517009d8b7445b806c4e "lualatex"
   "lit.bib" 1622118504 855 2cda5f834cf40f19f3b414760560a052 ""
   (generated)
   "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1622162449 "main.tex" "build/main.pdf" "main" 1622162459
+["lualatex"] 1622210131 "main.tex" "build/main.pdf" "main" 1622210141
   "/home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/cihad/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -243,7 +243,7 @@
   "/home/cihad/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-regular.luc" 1621978298 123433 f64c6cf0ffe7e6c580fdccae24785ad3 ""
   "/home/cihad/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-bold.luc" 1621978297 231561 cb810b3dc8ab158a85b7d19bf984cff4 ""
   "/home/cihad/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1621978297 411896 a176401a98d7a754b3d9694d722528fd ""
-  "/home/cihad/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1622162448 14743 91455d6fa60a4ae3a7763340d4e39427 "lualatex"
+  "/home/cihad/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1622162448 14743 91455d6fa60a4ae3a7763340d4e39427 ""
   "/home/cihad/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1621381772 1253722 b3f9c8c7b70dbc7f9f2fbe43916a5ff5 ""
   "/home/cihad/.local/texlive/2021/texmf-var/tex/generic/config/language.dat" 1621003647 6672 c6201ce9edfd23622f8f94635ac6d84c ""
   "/home/cihad/.local/texlive/2021/texmf-var/web2c/luahbtex/lualatex.fmt" 1621003692 3332760 b8b4c9365b698bd0c38913d5be6aad28 ""
@@ -255,21 +255,21 @@
   "build/Theta_T.pdf" 1622063377 9756 cee0cc1fdbf2e9383cb921ae16d191eb ""
   "build/alpha.PNG" 1621978206 30497 a1d708525cc8587dd104a817872a1dc2 ""
   "build/alpha.pdf" 1622051511 13234 288cc0814b6d5eaf29c20094e7fce20a ""
-  "build/main.aux" 1622162459 14967 962d1ffd29b9d42a57a5e0d15f9b6faf "lualatex"
+  "build/main.aux" 1622210141 14967 962d1ffd29b9d42a57a5e0d15f9b6faf "lualatex"
   "build/main.bbl" 1622135587 3689 4f70a1ef5944df96870447cc44dcf57e "biber build/main"
-  "build/main.run.xml" 1622162459 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1622162459 1962 e3eda1bb70ef31be9cfc7473215ba3e7 "lualatex"
-  "content/auswertung.tex" 1622162436 8737 d092c8c7dd4cbfe27c57729d98e3f572 ""
+  "build/main.run.xml" 1622210141 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1622210141 1962 e3eda1bb70ef31be9cfc7473215ba3e7 "lualatex"
+  "content/auswertung.tex" 1622210130 8937 c3763f0870d0bb99923bddd885233e7d ""
   "content/diskussion.tex" 1622162436 2229 2d74cb85b0379545764fd83c1a00c728 ""
   "content/durchfuehrung.tex" 1622118504 3080 dd5baf7c867b2c9c25c6151d3f17afec ""
   "content/theorie.tex" 1622134094 7541 d3f0c95ff3629ccb4b32486680b5d1c2 ""
-  "datendat-copy.csv" 1622122318 920 634dcf60ebf01efee8d7db2052132d9a ""
+  "datendat-copy.csv" 1622209676 2292 5c0d8fac608563f87203ef4a69bcedb0 ""
   "header.tex" 1622120738 3381 dda6d2d05d33c4b7ae11b7ec04329b14 ""
   "main.tex" 1622118504 627 8a3591f5c61ca19195ceac88972bafbc ""
   (generated)
   "build/main.aux"
-  "build/main.bcf"
-  "build/main.log"
   "build/main.run.xml"
+  "build/main.log"
   "build/main.pdf"
+  "build/main.bcf"
   "build/main.toc"
