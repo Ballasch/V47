@@ -18,7 +18,7 @@ $U$ und $I$ sind hierbei die angelegte Heizspannung und Heizstrom der Probe für
     m &= 0, \! 342 \, \mathrm{kg}
 \end{align*}
 
-Um die gemessenen Pt-100-Widerstände in die entsprechenden Temperaturen umzurechnen kann folgende Formel \cite{Anleitung} genutzt werden:
+Um die gemessenen Pt-100-Widerstände in die entsprechenden Temperaturen umzurechnen kann folgende Formel genutzt werden:
 
 \begin{equation}
     T = 0, \! 00134 \, R^2 + 2, \! 296 R - 243, \! 02
@@ -117,11 +117,11 @@ Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ f
 \begin{table}
     \centering
     \caption{Messdaten zur Berechnungen von $\theta_D$. }
-    \csvreader[tabular = c c c,
+    \csvreader[tabular = c c c c,
     head=true,
-    table head=$C_V \:/\: \si{\joule\per\kelvin\per\mole}$ & $T \:/\: \si{\kelvin} $ &  $\frac{\theta_D}{T}$ \\ \midrule,
+    table head=$C_V \:/\: \si{\joule\per\kelvin\per\mole}$ & $T \:/\: \si{\kelvin} $ &  $\frac{\theta_D}{T}$ & $\theta \:/\: \si{\kelvin}$\\ \midrule,
     late after line= \\]
-    {C_v_und_T-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii}
+    {C_v_und_T-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv}
     \label{tab:Debye}
 \end{table}
 
