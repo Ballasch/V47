@@ -7,7 +7,14 @@ vom klassischen Dulong-Petit-Gesetz sowie mit dem Einstein- und dem Debye-Gesetz
 
 \section{Theorie}
 \label{sec:Theorie}
-
+Die Molwärme beschreibt, wie gut ein Festkörper Energie speichern kann. Sie wird definiert als die Energie, die in Form von Wärme zugeführt werden muss, 
+um den Festkörper um $1\,\si{°C}$ zu erwärmen: 
+\begin{align*}
+    C = \frac{\delta Q}{\delta T}.
+\end{align*}
+Die spezifische Wärmekapazität ist die Molwärme pro Masse.\\
+Um die Molwärme zu bestimmen werden verschiedene Modelle zur Näherung verwendet. Diese sind zum einen das klassische Dulong-Petit-Gesetz und die quantenmechanischen 
+Modelle von Einstein und Debye. 
 \subsection{Dulong-Petit-Gesetz}
 \label{sec:dulongpetit}
 
@@ -51,6 +58,7 @@ Die mittlere Energie im Einstein-Modell beträgt also
 \begin{align}
     \langle u \rangle_{\text{Einstein}} = \frac{X}{Z} = \frac{\hbar \omega }{\exp \left( \frac{\hbar \omega}{k_B T}\right)}.
 \end{align}
+Das $Z$ gibt %FEHLT.
 Abschließend ergibt sich die Molwärme zu 
 \begin{align}
     \label{eqn:moleinstein}
@@ -64,7 +72,7 @@ Im Vergleich zum Einstein-Modell, wird im debyeschem Modell angenommen, dass Pho
 Eine Grenzfrequenz existiert, weil ein Festkörper eine endlich große Dimension und somit auch nur endlich viele Eigenschwingungen hat. Diese Grenzfrequenz wird Debye-Frequenz genannt. Es wird auch angenommen, 
 dass bis zu der Grenzfrequenz eine lineare Dispersionsrelation, also $\omega = \nu_s k$, gegeben ist. 
 Die Anzahl der Eigenschwingungen beträgt $3 N_L$ wobei $N_L$ die Loschmidt-Konstante darstellt. Die Loschmidt-Konstante gibt die Anzahl $N$ der Moleküle pro Volumen $V$ eines idealen Gases 
-bei einer Temperatur von $T = 273,15 \si{\kelvin}$ und einem Druck von $p = 101,325 \si{\kilo\pascal}$ an also:
+bei einer Temperatur von $T = 273,15\, \si{\kelvin}$ und einem Druck von $p = 101,325\,s \si{\kilo\pascal}$ an also:
 \begin{align}
     N_L = \frac{N}{V} = \frac{p}{k_B T}.
 \end{align}
@@ -85,7 +93,7 @@ Die Zustandsdichte im $k$-Raum ist im dreidimensionalem Fall immer
 also ist die Zustandsdichte im Frequenzraum
 \begin{align}
     \label{eqn:Z}
-    Z(\omega) d \omega &= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_{tr}}\right) d\omega \\
+    Z(\omega) d \omega &= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_ges} \right) d\omega= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_{tr}}\right) d\omega \\
     Z(\omega) d \omega &= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega.
 \end{align}
 
@@ -93,7 +101,7 @@ Die Gesamtenergie $U$ ergibt sich dann durch das Integrieren über alle Frequenz
 
 \begin{align}
     \label{eqn:udebye}
-    U &= \int_0^{\omega_D} \frac{Z(\omega)}{\exp \left( \frac{\hbar \omega}{k_B T} - 1 \right)} d\omega.
+    U &= \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T} - 1 \right)} d\omega.
 \end{align}
 
 Abschließend ergibt sich die Molwärme zu 

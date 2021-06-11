@@ -34,14 +34,14 @@
       \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
       \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
       \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Versuchsanleitung zu Versuch V47: Temperaturabhängigkeit der Molwärme von Festkörpern}
     \endentry
     \entry{kappa}{online}{}
       \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für das Kompressionsmodul von Cu}
       \field{urlday}{27}
@@ -57,7 +57,7 @@
     \endentry
     \entry{V0}{online}{}
       \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für das Molvolumen von Cu}
       \field{urlday}{27}
@@ -73,7 +73,7 @@
     \endentry
     \entry{h_quer}{online}{}
       \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für das reduzierte planksche Wirkungsquantum}
       \field{urlday}{27}
@@ -89,7 +89,7 @@
     \endentry
     \entry{k_B}{online}{}
       \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für die Boltzmann-Konstante}
       \field{urlday}{27}
