@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1623451758 "build/main.bcf" "build/main.bbl" "build/main" 1623452648
-  "build/main.bcf" 1623452647 102146 f72119b1f4614aa47d7d27641df8abbe "lualatex"
-  "lit.bib" 1622157991 855 2cda5f834cf40f19f3b414760560a052 ""
+["biber build/main"] 1623494729 "build/main.bcf" "build/main.bbl" "build/main" 1623494777
+  "build/main.bcf" 1623494776 102146 f72119b1f4614aa47d7d27641df8abbe "lualatex"
+  "lit.bib" 1623494672 795 0eb97d22f74c035f7ff3546b193d3e95 ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1623452634 "main.tex" "build/main.pdf" "main" 1623452648
+  "build/main.blg"
+["lualatex"] 1623494761 "main.tex" "build/main.pdf" "main" 1623494777
   "/home/cihad/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/cihad/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/cihad/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -218,21 +218,21 @@
   "build/Theta_T.pdf" 1622157991 9756 cee0cc1fdbf2e9383cb921ae16d191eb ""
   "build/alpha.PNG" 1622157991 30497 a1d708525cc8587dd104a817872a1dc2 ""
   "build/alpha.pdf" 1622157991 13234 288cc0814b6d5eaf29c20094e7fce20a ""
-  "build/main.aux" 1623452647 13425 7586ae1e29860b85c529a15f12392a20 "lualatex"
-  "build/main.bbl" 1623451761 3689 62e598eeaadca100b38629f87112f85a "biber build/main"
-  "build/main.run.xml" 1623452647 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1623452647 1337 f04bfbe7039b25e79f51c320a6c9ce2d "lualatex"
+  "build/main.aux" 1623494776 13425 86f3bd8321a7191f82740bee641bebfb "lualatex"
+  "build/main.bbl" 1623494738 3569 5693b7e2b7849ac3ecc8c611260b59c9 "biber build/main"
+  "build/main.run.xml" 1623494776 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1623494776 1337 f04bfbe7039b25e79f51c320a6c9ce2d "lualatex"
   "content/auswertung.tex" 1623449465 8974 18da4a7b191b155f25e715692b87aa66 ""
   "content/diskussion.tex" 1623452598 2313 5a1205a03743ebd95ef45dbdd5634623 ""
   "content/durchfuehrung.tex" 1623449465 3081 b6ef495f79455354112219cd05bc9cd9 ""
-  "content/theorie.tex" 1623452143 8188 42670d4ae10e0865397e486a4d3e404f ""
+  "content/theorie.tex" 1623454465 8223 f98713964e570e31390f9a6826740644 ""
   "datendat-copy.csv" 1623449465 2292 5c0d8fac608563f87203ef4a69bcedb0 ""
   "header.tex" 1622157991 3381 dda6d2d05d33c4b7ae11b7ec04329b14 ""
   "main.tex" 1623449465 627 704d5101530c3130a854fee651f1d582 ""
   (generated)
+  "build/main.log"
+  "build/main.toc"
   "build/main.bcf"
+  "build/main.pdf"
   "build/main.aux"
   "build/main.run.xml"
-  "build/main.toc"
-  "build/main.log"
-  "build/main.pdf"

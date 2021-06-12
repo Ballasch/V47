@@ -60,15 +60,15 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für das Molvolumen von Cu}
-      \field{urlday}{27}
-      \field{urlmonth}{5}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://de.wikipedia.org/wiki/Kupfer
+      \verb https://www.webelements.com/copper/
       \endverb
       \verb{url}
-      \verb https://de.wikipedia.org/wiki/Kupfer
+      \verb https://www.webelements.com/copper/
       \endverb
     \endentry
     \entry{h_quer}{online}{}
@@ -76,15 +76,15 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für das reduzierte planksche Wirkungsquantum}
-      \field{urlday}{27}
-      \field{urlmonth}{5}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://de.wikipedia.org/wiki/Plancksches_Wirkungsquantum#Reduziertes_Plancksches_Wirkungsquantum
+      \verb http://physics.nist.gov/cgi-bin/cuu/Value?h
       \endverb
       \verb{url}
-      \verb https://de.wikipedia.org/wiki/Plancksches_Wirkungsquantum#Reduziertes_Plancksches_Wirkungsquantum
+      \verb http://physics.nist.gov/cgi-bin/cuu/Value?h
       \endverb
     \endentry
     \entry{k_B}{online}{}
@@ -92,15 +92,15 @@
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{labeltitlesource}{title}
       \field{title}{Literaturwert für die Boltzmann-Konstante}
-      \field{urlday}{27}
-      \field{urlmonth}{5}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \verb https://physics.nist.gov/cgi-bin/cuu/Value?k
       \endverb
       \verb{url}
-      \verb https://de.wikipedia.org/wiki/Boltzmann-Konstante
+      \verb https://physics.nist.gov/cgi-bin/cuu/Value?k
       \endverb
     \endentry
   \enddatalist
