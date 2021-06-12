@@ -36,17 +36,16 @@ Hierbei steht $N_L$ für die Loschmidt-Zahl. Somit ist die klassische spezifisch
 In der klassischen Betrachtung ist die Molwärme also sowohl Material als auch Temperaturunabhängig. Diese Eigenschaft nennt man das Dulong-Petit-Gesetz.
 \subsection{Einstein-Gesetz}
 \label{sec:einstein}
-%Rest kommt noch
 
 Das Modell von Albert Einstein befasst sich mit einer quantenmechanischen Näherung zur Bestimmung der Molwärme. In dem Einstein-Modell ist die Annahme, 
 dass alle Gitterschwingungen mit der gleichen Frequenz $\omega$ schwingen. Diese Gitterschwingungen werden des Weiteren auch gequantelt betrachtet und besitzen demnach ein 
-Vielfaches von $\hbar \omega$ als Energie. Diese gequantelten Gitterschwindungen werden auch Phononen genannt. \\
+Vielfaches von $\hbar \omega$ als Energie. Diese gequantelten Gitterschwingungen werden auch Phononen genannt. \\
 
 Die Energien sind im Festkörper boltzmann-verteilt. Dadurch kann die Wahrscheinlichkeit, dass ein Phonon bei thermischem Gleichgewicht bei der Temperatur $T$ die Energie $n \hbar \omega$ besitzt, 
 einfach mit der Formel
 \begin{align}
     \label{eqn:wn}
-    W(n) = \exp{\frac{-n \hbar \omega}{k_B T}}
+    W(n) = \exp{\left( - \frac{n \hbar \omega}{k_B T} \right)}
 \end{align}
 berechnet werden. \\
 Der Erwartungswert $X$ der Energie wird berechnet, indem die über alle $n$ zwischen $0$ und $\infty$ mit den entsprechenden $W(n)$ Koeffizienten summiert wird. 
@@ -58,7 +57,7 @@ Die mittlere Energie im Einstein-Modell beträgt also
 \begin{align}
     \langle u \rangle_{\text{Einstein}} = \frac{X}{Z} = \frac{\hbar \omega }{\exp \left( \frac{\hbar \omega}{k_B T}\right)}.
 \end{align}
-Das $Z$ gibt dabei die Summe der gesamten Zustände an. Abschließend ergibt sich die Molwärme zu 
+Die Zustandssumme $Z$ gibt dabei die Summe der gesamten Zustände an. Abschließend ergibt sich die Molwärme zu 
 \begin{align}
     \label{eqn:moleinstein}
     (C_V)_{\text{Einstein}} = 3 R \left( \frac{\hbar \omega}{k_B T}\right)^2 \frac{\exp \left(\frac{\hbar \omega}{k_B T}\right)}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)^2}.
@@ -71,14 +70,14 @@ Im Vergleich zum Einstein-Modell, wird im debyeschem Modell angenommen, dass Pho
 Eine Grenzfrequenz existiert, weil ein Festkörper eine endlich große Dimension und somit auch nur endlich viele Eigenschwingungen hat. Diese Grenzfrequenz wird Debye-Frequenz genannt. Es wird auch angenommen, 
 dass bis zu der Grenzfrequenz eine lineare Dispersionsrelation, also $\omega = \nu_s k$, gegeben ist. 
 Die Anzahl der Eigenschwingungen beträgt $3 N_L$ wobei $N_L$ die Loschmidt-Konstante darstellt. Die Loschmidt-Konstante gibt die Anzahl $N$ der Moleküle pro Volumen $V$ eines idealen Gases 
-bei einer Temperatur von $T = 273,15\, \si{\kelvin}$ und einem Druck von $p = 101,325\,s \si{\kilo\pascal}$ an also:
+bei einer Temperatur von $T = 273, \! 15\, \si{\kelvin}$ und einem Druck von $p = 101, \! 325 \, \si{\kilo\pascal}$ an also:
 \begin{align}
     N_L = \frac{N}{V} = \frac{p}{k_B T}.
 \end{align}
 Wird die Frequenzverteilung $Z(\omega)$ bis zu der Grenzfrequenz $\omega_D$ integriert, so sollte also $3 N_L$ rauskommen
 \begin{align}
     \label{eqn:Z_integral}
-    \int_0^{\omega_D} Z(\omega) d\omega = 3 N_L .
+    \int_{\, 0}^{\omega_D} Z(\omega) d\omega = 3 N_L .
 \end{align}
 Um Einblicke aus diesem Integral zu erhalten, ist es nützlich die Zustandsdichte $Z(\omega)$ im $k$-Raum zu schreiben. Das geht über die Umformung 
 \begin{align}
@@ -92,7 +91,7 @@ Die Zustandsdichte im $k$-Raum ist im dreidimensionalem Fall immer
 also ist die Zustandsdichte im Frequenzraum
 \begin{align}
     \label{eqn:Z}
-    Z(\omega) d \omega &= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_ges} \right) d\omega= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_{tr}}\right) d\omega \\
+    Z(\omega) d \omega &= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_{ges}} \right) d\omega= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_{tr}}\right) d\omega \\
     Z(\omega) d \omega &= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega.
 \end{align}
 
@@ -100,22 +99,22 @@ Die Gesamtenergie $U$ ergibt sich dann durch das Integrieren über alle Frequenz
 
 \begin{align}
     \label{eqn:udebye}
-    U &= \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T} - 1 \right)} d\omega.
+    U &= \int_{\, 0}^{\omega_D} \frac{Z(\omega) \, \hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T} - 1 \right)} d\omega.
 \end{align}
 
 Abschließend ergibt sich die Molwärme zu 
 
 \begin{align}
-    C_{V, \text{Debye}} &= \frac{d}{d T} \frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3}{\exp \left(\frac{\hbar \omega}{k_B T} -1 \right)} d \omega.
+    C_{V, \text{Debye}} &= \frac{d}{d T} \frac{9 N_L}{\omega_D^3} \int_{\, 0}^{\omega_D} \frac{\hbar \omega^3}{\exp \left(\frac{\hbar \omega}{k_B T} -1 \right)} d \omega.
 \end{align}
 
 Damit lässt sich die innere Energie wie folgt berechnen:
 \begin{align}
-    U =  \int_0^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}.
+    U =  \int_{\, 0}^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}.
 \end{align}
 wobei $\langle n(\omega)\rangle$ die Bose-Einstein-Statistik angibt. Die Ableitung nach $T$ der inneren Energie ergibt die Lösung für die Molwärme. Die Molwärme im Debye-Modell hat die Form
 \begin{align}
-    C_{V,\text{Debye}}= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_0^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
+    C_{V,\text{Debye}}= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_{\, 0}^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
 \end{align}
 Durch Einsetzen der Substitution 
 \begin{align}
@@ -126,7 +125,7 @@ wird die Molwärme zu
 \begin{align}
     C_{V,\text{Debye}} = 9 R \left(\frac{\theta_D}{T}\right)^3 \int_0^{\frac{\theta_D}{T}} \frac{x^4 \exp \left(x\right)}{ \left(\exp(x) -1\right)^2}.
 \end{align}
-Das $\theta_D$ wird die Debye-Temperatur genannt. Die Molwärme im Debye-Modell bei großen Temperaturen also $x<<1$ konvergiert gegen $3 R$, die klassischen Näherung. Bei kleinen Temperaturen ist die Molwärme 
+Das $\theta_D$ wird die Debye-Temperatur genannt. Die Debye-Temperatur $\theta_D$ ist ein materialabhängiger Parameter. Sie gibt im Debye Modell die Temepratur an, bei der alle Zustände, die möglich sind, besetzt werden. Die Molwärme im Debye-Modell bei großen Temperaturen also $x<<1$ konvergiert gegen $3 R$, die klassischen Näherung. Bei kleinen Temperaturen ist die Molwärme 
 jedoch proportional zu $T^3$. 
 \subsection{Weitere Anmerkungen}
 Es ist wichtig zu erwähnen, dass die Leitungselektronen im Festkörper ebenfalls einen Beitrag zur Molwärme leisten. Vor allem bei niedrigen Temperaturen spielt der Einfluss der Leitungselektronen eine größere Rolle. 
