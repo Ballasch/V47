@@ -19,6 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{kappa}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a4a7674209b366de4d19484e0b5a4c05}{%
+           family={Chrzanowski},
+           familyi={C\bibinitperiod},
+           given={Janusz},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3ea359dbb8f86716e5db1de38e5674d7}{%
+           family={Bieg},
+           familyi={B\bibinitperiod},
+           given={Bohdan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{30b76b50bc86ad73dd9b42dab947f1f8}
+      \strng{fullhash}{30b76b50bc86ad73dd9b42dab947f1f8}
+      \strng{bibnamehash}{30b76b50bc86ad73dd9b42dab947f1f8}
+      \strng{authorbibnamehash}{30b76b50bc86ad73dd9b42dab947f1f8}
+      \strng{authornamehash}{30b76b50bc86ad73dd9b42dab947f1f8}
+      \strng{authorfullhash}{30b76b50bc86ad73dd9b42dab947f1f8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New Trends in Production Engineering}
+      \field{month}{10}
+      \field{title}{Bulk Modulus of Copper Alloys in Context of Modern Metal Theory}
+      \field{volume}{1}
+      \field{year}{2018}
+      \field{pages}{681\bibrangedash 686}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.2478/ntpe-2018-0086
+      \endverb
+    \endentry
     \entry{Anleitung}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
@@ -39,68 +73,123 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuchsanleitung zu Versuch V47: Temperaturabhängigkeit der Molwärme von Festkörpern}
     \endentry
-    \entry{kappa}{online}{}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+    \entry{k_B}{article}{}
+      \name{author}{3}{}{%
+        {{hash=da59db3db62da909ecfaf006c2a3f1e9}{%
+           family={Fellmuth},
+           familyi={F\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=38e9ed7564a1599b2a215fb022817595}{%
+           family={Gaiser},
+           familyi={G\bibinitperiod},
+           given={Ch},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bbb649dd12820b33ced431511fb48fe8}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{8f4706b7dce0e16e105458e8f0086a07}
+      \strng{fullhash}{8f4706b7dce0e16e105458e8f0086a07}
+      \strng{bibnamehash}{8f4706b7dce0e16e105458e8f0086a07}
+      \strng{authorbibnamehash}{8f4706b7dce0e16e105458e8f0086a07}
+      \strng{authornamehash}{8f4706b7dce0e16e105458e8f0086a07}
+      \strng{authorfullhash}{8f4706b7dce0e16e105458e8f0086a07}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Literaturwert für das Kompressionsmodul von Cu}
-      \field{urlday}{27}
-      \field{urlmonth}{5}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
+      \field{abstract}{The present definition of the kelvin links the unit of temperature with a material property, namely the triple point temperature of water. It would be more consistent with the current approaches to other base units of the International System of Units to fix the value of the Boltzmann constant k, instead. This would rationalize the definition and make it separate from any technique of realization. Furthermore, it is needed to improve temperature measurement, particularly at temperatures far away from the triple point of water. For this purpose, k must first be determined with appropriately small uncertainty applying different measurement methods. In this paper, the primary-thermometry methods for determining the Boltzmann constant (acoustic gas thermometry, thermal-equation-of-state methods, radiation thermometry and methods based directly on statistics and quantization) and their state-of-the-art level of uncertainty are discussed. Special emphasis is given to the basic physics underlying these methods, the fundamental error sources and the uncertainty, which seems to be attainable on a five-year timescale in view of some new developments and the foreseeable progress. Finally, a possible simple new definition of the kelvin is proposed.}
+      \field{journaltitle}{Measurement Science and Technology}
+      \field{month}{8}
+      \field{number}{10}
+      \field{title}{Determination of the Boltzmann constant{—}status and prospects}
+      \field{volume}{17}
+      \field{year}{2006}
+      \field{pages}{R145\bibrangedash R159}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/0957-0233/17/10/r01
+      \endverb
       \verb{urlraw}
-      \verb http://www.periodensystem-online.de/index.php?el=29&id=modify
+      \verb https://doi.org/10.1088/0957-0233/17/10/r01
       \endverb
       \verb{url}
-      \verb http://www.periodensystem-online.de/index.php?el=29&id=modify
+      \verb https://doi.org/10.1088/0957-0233/17/10/r01
       \endverb
     \endentry
-    \entry{V0}{online}{}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+    \entry{V0}{article}{}
+      \name{author}{1}{}{%
+        {{hash=99966849ae0cc3c5656c5199f55bf391}{%
+           family={Richard\bibnamedelimb A.\bibnamedelimi Robie},
+           familyi={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Philip\bibnamedelimb M.\bibnamedelimi Bethke},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{99966849ae0cc3c5656c5199f55bf391}
+      \strng{fullhash}{99966849ae0cc3c5656c5199f55bf391}
+      \strng{bibnamehash}{99966849ae0cc3c5656c5199f55bf391}
+      \strng{authorbibnamehash}{99966849ae0cc3c5656c5199f55bf391}
+      \strng{authornamehash}{99966849ae0cc3c5656c5199f55bf391}
+      \strng{authorfullhash}{99966849ae0cc3c5656c5199f55bf391}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Literaturwert für das Molvolumen von Cu}
-      \field{urlday}{12}
+      \field{journaltitle}{United States department of the interior geological survey}
+      \field{month}{10}
+      \field{title}{Molar Volumes and Densities of Minerals}
+      \field{urlday}{26}
       \field{urlmonth}{6}
       \field{urlyear}{2021}
+      \field{volume}{1}
+      \field{year}{1983}
       \field{urldateera}{ce}
+      \field{pages}{4}
+      \range{pages}{1}
       \verb{urlraw}
-      \verb https://www.webelements.com/copper/
+      \verb https://pubs.usgs.gov/tei/822/report.pdf
       \endverb
       \verb{url}
-      \verb https://www.webelements.com/copper/
+      \verb https://pubs.usgs.gov/tei/822/report.pdf
       \endverb
     \endentry
     \entry{h_quer}{online}{}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \name{author}{2}{}{%
+        {{hash=c7405ad5ec86b362e83c36398579963d}{%
+           family={The\bibnamedelimb NIST\bibnamedelimb Reference\bibnamedelimb on\bibnamedelima Constants},
+           familyi={T\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Units},
+           giveni={U\bibinitperiod}}}%
+        {{hash=9df64ea44035467d4b3b1d3137556ccb}{%
+           family={Uncertainty},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4f31a0bbd3d13154333660cbe48cf3d}
+      \strng{fullhash}{d4f31a0bbd3d13154333660cbe48cf3d}
+      \strng{bibnamehash}{d4f31a0bbd3d13154333660cbe48cf3d}
+      \strng{authorbibnamehash}{d4f31a0bbd3d13154333660cbe48cf3d}
+      \strng{authornamehash}{d4f31a0bbd3d13154333660cbe48cf3d}
+      \strng{authorfullhash}{d4f31a0bbd3d13154333660cbe48cf3d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Literaturwert für das reduzierte planksche Wirkungsquantum}
-      \field{urlday}{12}
+      \field{title}{2018 CODATA Value: reduced Planck constant}
+      \field{urlday}{26}
       \field{urlmonth}{6}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb http://physics.nist.gov/cgi-bin/cuu/Value?h
+      \verb https://physics.nist.gov/cgi-bin/cuu/Value?hbar
       \endverb
       \verb{url}
-      \verb http://physics.nist.gov/cgi-bin/cuu/Value?h
-      \endverb
-    \endentry
-    \entry{k_B}{online}{}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labeltitlesource}{title}
-      \field{title}{Literaturwert für die Boltzmann-Konstante}
-      \field{urlday}{12}
-      \field{urlmonth}{6}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://physics.nist.gov/cgi-bin/cuu/Value?k
-      \endverb
-      \verb{url}
-      \verb https://physics.nist.gov/cgi-bin/cuu/Value?k
+      \verb https://physics.nist.gov/cgi-bin/cuu/Value?hbar
       \endverb
     \endentry
   \enddatalist
