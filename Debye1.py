@@ -15,7 +15,11 @@ V = 7.11 * 10**-6
 #Universelle Gaskonstante
 R = 8.31439
 
-t0, R_P, R_G, U0, I0 = np.genfromtxt("daten.dat", delimiter="	", unpack=True)
+t0, R_P, R_G, U0, I0 = np.genfromtxt("daten_neu.csv", delimiter=",", skip_header=3, unpack=True)
+
+#Bei der Messung wurde der Komma falsch platziert. Dafür wird korrigiert
+R_P = R_P*0.1
+R_G = R_G*0.1
 
 #Widerstände in Temperatur umrechnen und in K umrechnen
 T_P = unp.uarray(0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15, 0)

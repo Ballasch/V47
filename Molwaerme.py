@@ -15,8 +15,12 @@ V = 7.11 * 10**-6
 #Universelle Gaskonstante
 R = 8.31439
 
-t, R_P, R_G, U, I = np.genfromtxt("daten.dat", delimiter="	", unpack=True)
+t, R_P, R_G, U, I = np.genfromtxt("daten_neu.csv", delimiter=",", skip_header=3, unpack=True,encoding='latin-1')
 
+print(t, R_P, R_G, U, I )
+#Bei der Messung wurde der Komma falsch platziert. Dafür wird korrigiert
+R_P = R_P*0.1
+R_G = R_G*0.1
 #Widerstände in Temperatur umrechnen und in K umrechnen mit 0 als Fehler
 T_P = unp.uarray(0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15, 0)
 T_G = unp.uarray(0.00134 * (R_G * 1000)**2 + 2.296 * (R_G * 1000) - 243.02 + 273.15, 0)
@@ -60,17 +64,17 @@ with open('datendat-copy.csv', 'w') as csvfile:
 
 #Die größten Ausreißer ausfiltern also Wert 4, 5, 21 raus aus den Arrays
 #Für die ungefilterte Version Zeile 51 verwenden an Stelle von dem hier und in Zeile 39 err1 durch err0 2 mal ersetzen und in Zeile 75 C_v_plot durch C_v ersetzen
-for x in range(3):
-    C_v_plot[x] = C_v[x]
-    T_plot[x] = T[x]
+# for x in range(3):
+#     C_v_plot[x] = C_v[x]
+#     T_plot[x] = T[x]
 
-for x in range(15):
-    C_v_plot[x+3] = C_v[x+5]
-    T_plot[x+3] = T[x+5]
+# for x in range(15):
+#     C_v_plot[x+3] = C_v[x+5]
+#     T_plot[x+3] = T[x+5]
 
-for x in range(10):
-    C_v_plot[x+18] = C_v[x+21]
-    T_plot[x+18] = T[x+21]
+# for x in range(10):
+#     C_v_plot[x+18] = C_v[x+21]
+#     T_plot[x+18] = T[x+21]
 
 #3R Linie zu markieren
 x_plot = np.linspace(75, 310, 2)

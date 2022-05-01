@@ -1,5 +1,12 @@
-#import matplotlib.pyplot as plt
-#import numpy as np
+import matplotlib.pyplot as plt
+import numpy as np
+
+t,R_P,R_Z,T_P,T_Z,T,U,I,C_p,C_V = np.genfromtxt("datendat-copy.csv", delimiter=",", skip_header=1, unpack=True)
+
+C_V_kurz = C_V[np.where(T<160)]
+T_kurz = T[np.where(T<160)]
+
+print(C_V_kurz, T_kurz, T)
 #
 #x = np.linspace(0, 10, 1000)
 #y = x ** np.sin(x)
