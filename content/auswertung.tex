@@ -120,11 +120,10 @@ Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
 \end{figure}
 
 In Abbildung \ref{fig:C_V} ist zu erkennen, dass es bei der Messung einige Messfehler aufgetreten sind. Deswegen werden die Werte Nummer 4, 5 und 21 aus Tabelle \ref{tab:C} als Messfehler herausgenommen und erneut in einem Diagramm gegen die Temperatur $T$ aufgetragen.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{build/C_V_gefiltert.pdf}
-    \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken.}
+    \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken und ohne Ausreißer.}
     \label{fig:C_V_gefiltert}
 \end{figure}
 
@@ -143,14 +142,14 @@ Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ f
     head=true,
     table head=$C_V \:/\: \si{\joule\per\kelvin\per\mole}$ & $T \:/\: \si{\kelvin} $ &  $\frac{\theta_D}{T}$ & $\theta \:/\: \si{\kelvin}$\\ \midrule,
     late after line= \\]
-    {C_v_und_T-copy.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv}
+    {C_v_und_T_neu.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv}
     \label{tab:Debye}
 \end{table}
 
 Die verschiedenen Werte für die Debye-Temperatur $\theta_D$ ergeben gemittelt:
 
 \begin{equation*}
-    \theta_D = (329 \pm 19) \, \mathrm{K}
+    \theta_D = (545.5 \pm 58.6) \, \mathrm{K}
     \label{eq:debye}
 \end{equation*}
 

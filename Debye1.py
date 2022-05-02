@@ -4,6 +4,8 @@ import uncertainties.unumpy as unp
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
+from Molwaerme import C_v_plot, T_plot
+
 #Masse Probe in kg
 m = 0.342
 #Molmasse Kupfer in kg/mol
@@ -15,73 +17,31 @@ V = 7.11 * 10**-6
 #Universelle Gaskonstante
 R = 8.31439
 
-t0, R_P, R_G, U0, I0 = np.genfromtxt("daten_neu.csv", delimiter=",", skip_header=3, unpack=True)
+t,R_P,R_Z,T_P,T_Z,T,U,I,C_p,C_V = np.genfromtxt("datendat-copy.csv", delimiter=",", skip_header=1, unpack=True)
 
-#Bei der Messung wurde der Komma falsch platziert. Dafür wird korrigiert
-R_P = R_P*0.1
-R_G = R_G*0.1
 
-#Widerstände in Temperatur umrechnen und in K umrechnen
-T_P = unp.uarray(0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15, 0)
-T_G = unp.uarray(0.00134 * (R_G * 1000)**2 + 2.296 * (R_G * 1000) - 243.02 + 273.15, 0)
-
-#Mittlere Temperatur zwischen Gefäß und Probe bestimmen
-T_m = (T_P + T_G) / 2
-
-#temporäre uArrays für t, T, U, I, alpha, C_p, C_v, C_v_plot, T_plot erstellen mit Fehler
-err0 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-err1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-err2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-t = unp.uarray(err0, err0)
-T = unp.uarray(err0, err0)
-U = unp.uarray(err0, err0)
-I = unp.uarray(err0, err0)
-alpha = unp.uarray(err0, err0)
-C_p = unp.uarray(err1, err1)
-C_v = unp.uarray(err1, err1)
-C_v_plot = unp.uarray(err2, err2)
-T_plot = unp.uarray(err2, err2)
-
-#nur Temperaturen mit T<170K verwenden, also die ersten 15
-for x in range(15):
-    t[x] = t0[x]
-    T[x] = T_m[x]
-    U[x] = U0[x]
-    I[x] = I0[x]
-
-print(T)
-
-#alpha bestimmen mit T
-for x in range(15):
-    alpha[x] = - ufloat(8.2, 0.7) * 10**-9 * T[x]**4 + ufloat(7.4, 0.5) * 10**-6 * T[x]**3 - ufloat(2.5, 0.1) * 10**-3 * T[x]**2 + ufloat(0.41, 0.02) * T[x] - ufloat(11.3, 0.6)
-
-print(alpha)
-
-#C_p bestimmen (Formel: U * I * delta_t * M / m / delta_T)
-for x in range(14):
-    C_p[x] = U[x] * I[x] * 10**-3 * (t[x+1] - t[x]) * 60 * M / m / (T[x+1] - T[x])
-
-#C_v bestimmen
-for x in range(14):
-    C_v[x] = C_p[x] - 9 * (alpha[x+1] * 10**-6)**2 * k * 10**9 * T[x+1] * V
-
-print(C_v)
-
-#Die größten Ausreißer ausfiltern also Wert 4 und 5 raus aus den Arrays
-for x in range(3):
-    C_v_plot[x] = C_v[x]
-    T_plot[x] = T[x]
-
-for x in range(9):
-    C_v_plot[x+3] = C_v[x+5]
-    T_plot[x+3] = T[x+5]
-
-print(C_v_plot, T_plot)
 
 #lineare Regression
 def lin(x, a, b):
     return a * x + b
 
+C_v_plot = C_V[1:-3]
+T_plot = T[1:-3]
+C_V_errors = [0.03119271, 0.03255349, 0.03394991, 0.0362609 , 0.03790259, 0.04021695,
+ 0.04278006, 0.04527483, 0.04786025, 0.05053832, 0.05349947, 0.05696226,
+ 0.06016075, 0.06453554, 0.06844944, 0.07251927, 0.07603303, 0.07916955,
+ 0.08139095, 0.08289583, 0.0846759 , 0.08700354, 0.08910948, 0.09152098,
+ 0.09370249, 0.09648035, 0.09988936, 0.10338248, 0.10756676, 0.11218379,
+ 0.11694257, 0.12251193, 0.1296578 , 0.13747074, 0.14525249, 0.15375821,
+ 0.16387861, 0.17494184, 0.18657949, 0.19737509, 0.20765965, 0.21836906,
+ 0.22843939, 0.2383254 , 0.24855969, 0.25915487, 0.27136601, 0.28276413,
+ 0.29456266, 0.30815529, 0.3244376 , 0.34220141, 0.36477027, 0.39115762,
+ 0.41738975, 0.44514769, 0.47552167, 0.50344912, 0.53059017, 0.55901606,
+ 0.5875663 , 0.61360129, 0.63803504, 0.66740301, 0.69091358, 0.71515827,
+ 0.74464549, 0.76900778, 0.8020468 , 0.84635469, 0.89456752, 0.94148317,
+ 1.00412178, 1.05599175, 1.10166918, 1.14684254, 1.1890677 , 1.23493647,
+ 1.27270035, 1.32126106, 1.37389875, 1.42038557, 1.4708424 , 1.52829176,
+ 1.59038787, 1.66930482, 1.74199327, 1.81390848, 1.89458736]
 params, covariance_matrix = curve_fit(lin, unp.nominal_values(C_v_plot), unp.nominal_values(T_plot), p0=(1, 1))
 uncertainties = np.sqrt(np.diag(covariance_matrix))
 for name, value, uncertainty in zip('ab', params, uncertainties):
@@ -89,10 +49,10 @@ for name, value, uncertainty in zip('ab', params, uncertainties):
 
 x_plot = np.linspace(10, 29, 2)
 
-plt.errorbar(unp.nominal_values(C_v_plot), unp.nominal_values(T_plot), xerr = unp.std_devs(C_v_plot), fmt='rx', label='Messwerte')
+plt.errorbar(unp.nominal_values(C_v_plot), unp.nominal_values(T_plot), xerr = C_V_errors, fmt='rx', label='Messwerte')
 plt.plot(x_plot, params[0]*x_plot + params[1], 'b-', label=r'Regression', linewidth=1)
 plt.xlabel(r'$C_v \, / \, \mathrm{J} \mathrm{Mol}^{-1} \mathrm{K}^{-1}$')
 plt.ylabel(r'$T \, / \, \mathrm{K}$')
 plt.legend()
 plt.tight_layout()
-plt.savefig('Debye.pdf')
+plt.savefig('build/Debye.pdf')

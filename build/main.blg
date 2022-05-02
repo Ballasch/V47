@@ -1,18 +1,22 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'build/main.blg'
-[57] biber:340> INFO - === Sun May  1, 2022, 21:51:18
-[76] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[139] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[152] Biber.pm:4340> INFO - Processing section 0
-[162] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[168] bibtex.pm:1689> INFO - LaTeX decoding ...
-[172] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[205] Utils.pm:395> WARN - legacy month field 'aug' in entry 'k_B' is not an integer - this will probably not sort properly.
-[211] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[221] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[221] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[222] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[222] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[232] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[236] bbl.pm:757> INFO - Output to build/main.bbl
-[237] Biber.pm:128> INFO - WARNINGS: 2
+[1] Config.pm:304> INFO - This is Biber 2.14
+[1] Config.pm:307> INFO - Logfile is 'build/main.blg'
+[133] biber:322> INFO - === Mon May  2, 2022, 06:54:24
+[156] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[276] Biber.pm:943> INFO - Found 5 citekeys in bib section 0
+[299] Biber.pm:4256> INFO - Processing section 0
+[300] Utils.pm:75> INFO - Globbing data source 'lit.bib'
+[300] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
+[300] Utils.pm:75> INFO - Globbing data source 'programme.bib'
+[300] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
+[320] Biber.pm:4455> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[333] bibtex.pm:1653> INFO - LaTeX decoding ...
+[357] bibtex.pm:1471> INFO - Found BibTeX data source 'lit.bib'
+[419] Utils.pm:304> WARN - month field 'aug' in entry 'k_B' is not an integer - this will probably not sort properly.
+[444] Utils.pm:304> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[470] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[470] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[470] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[470] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[495] bbl.pm:652> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[501] bbl.pm:755> INFO - Output to build/main.bbl
+[511] Biber.pm:128> INFO - WARNINGS: 2

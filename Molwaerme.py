@@ -104,8 +104,8 @@ T_plot = T[1:-3]
 x_plot = np.linspace(75, 310, 2)
 R_plot = [3 * R, 3 * R]
 
-
-
+print("Errors:")
+print(unp.std_devs(C_v_plot))
 
 def debye():
     return 0
@@ -122,3 +122,19 @@ plt.legend()
 plt.tight_layout()
 plt.grid()
 plt.savefig('build/C_V_gefiltert.pdf')
+
+plt.clf()
+plt.close()
+
+C_v_plot = C_v
+T_plot = T
+plt.plot(x_plot, R_plot, 'b-', label='3R', linewidth=1)
+plt.errorbar(unp.nominal_values(T_plot), unp.nominal_values(C_v_plot), yerr = unp.std_devs(C_v_plot),fmt = "k.", label='Messwerte')
+plt.xlabel(r'$T \, / \, \mathrm{K}$')
+plt.ylabel(r'$C_V \, / \, \mathrm{J} \, \mathrm{K}^{-1} \mathrm{mol}^{-1}$')
+
+plt.ylim(0,60)
+plt.legend()
+plt.tight_layout()
+plt.grid()
+plt.savefig('build/C_V.pdf')
