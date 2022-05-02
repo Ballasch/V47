@@ -123,6 +123,45 @@
       \verb https://doi.org/10.1088/0957-0233/17/10/r01
       \endverb
     \endentry
+    \entry{GrossMarx+2018}{book}{}
+      \name{author}{2}{}{%
+        {{hash=44cf590421bbd4ea70d5e6c528fb6ced}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4d6c3076853c54d472c16a16909be28e}{%
+           family={Marx},
+           familyi={M\bibinitperiod},
+           given={Achim},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{9997e43d8dd7d8f34dfa3f3d5fa462cd}
+      \strng{fullhash}{9997e43d8dd7d8f34dfa3f3d5fa462cd}
+      \strng{bibnamehash}{9997e43d8dd7d8f34dfa3f3d5fa462cd}
+      \strng{authorbibnamehash}{9997e43d8dd7d8f34dfa3f3d5fa462cd}
+      \strng{authornamehash}{9997e43d8dd7d8f34dfa3f3d5fa462cd}
+      \strng{authorfullhash}{9997e43d8dd7d8f34dfa3f3d5fa462cd}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783110559187}
+      \field{title}{Festkörperphysik}
+      \field{year}{2018}
+      \verb{doi}
+      \verb doi:10.1515/9783110559187
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9783110559187
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9783110559187
+      \endverb
+    \endentry
     \entry{V0}{article}{}
       \name{author}{1}{}{%
         {{hash=99966849ae0cc3c5656c5199f55bf391}{%
@@ -193,8 +232,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{GrossMarx+2018}
-  \missing{manual}
 \endrefsection
 \endinput
 
