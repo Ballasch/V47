@@ -1,18 +1,18 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/main.blg'
-[66] biber:340> INFO - === Sat Jun 26, 2021, 00:21:09
-[79] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[135] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[146] Biber.pm:4340> INFO - Processing section 0
-[154] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[161] bibtex.pm:1689> INFO - LaTeX decoding ...
-[174] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[207] Utils.pm:395> WARN - legacy month field 'aug' in entry 'k_B' is not an integer - this will probably not sort properly.
-[217] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[228] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[229] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[229] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[229] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[237] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[240] bbl.pm:757> INFO - Output to build/main.bbl
-[245] Biber.pm:128> INFO - WARNINGS: 2
+[57] biber:340> INFO - === Sun May  1, 2022, 21:51:18
+[76] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[139] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
+[152] Biber.pm:4340> INFO - Processing section 0
+[162] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[168] bibtex.pm:1689> INFO - LaTeX decoding ...
+[172] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[205] Utils.pm:395> WARN - legacy month field 'aug' in entry 'k_B' is not an integer - this will probably not sort properly.
+[211] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[221] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[221] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[222] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[222] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[232] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[236] bbl.pm:757> INFO - Output to build/main.bbl
+[237] Biber.pm:128> INFO - WARNINGS: 2
