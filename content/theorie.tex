@@ -1,132 +1,147 @@
-\section{Zielsetzung}
-\label{sec:Zielsetzung}
-
-Ziel des Versuches ist es die Temperaturabhängigkeit der Molwärme von Kupfer zu messen. Diese wird mit den Vorhersagen 
-vom klassischen Dulong-Petit-Gesetz sowie mit dem Einstein- und dem Debye-Gesetz zur Molwärme verglichen. Zusätzlich wird ein Wert für die Debye-Temperatur $\theta_D$ bestimmt und mit dem Theoriewert verglichen.
-
-
 \section{Theorie}
 \label{sec:Theorie}
-Die Molwärme ist bei Festkörpern ein Maß für die Fähigkeit Wärme aufzunehmen und abzugeben. Sie wird definiert als die Energie, die in Form von Wärme zugeführt werden muss, 
-um den Festkörper um $1\,\si{°C}$ zu erwärmen: 
-\begin{align*}
-    C = \frac{\delta Q}{\delta T}.
-\end{align*}
-Die spezifische Wärmekapazität ist die Molwärme pro Masse.\\
-Um die Molwärme zu bestimmen werden verschiedene Modelle zur Näherung verwendet. Diese sind zum einen das klassische Dulong-Petit-Gesetz und die quantenmechanischen 
-Modelle von Einstein und Debye. 
-\subsection{Dulong-Petit-Gesetz}
-\label{sec:dulongpetit}
 
-Atome in einem Festkörper sind durch Gitterkräfte an festen Stellen gebunden. Sie besitzen jedoch drei Freiheitsgrade, in die sie schwingen können. 
-Im Mittel ist deren kinetische Energie gleich der potentiellen Energie. Die Energie pro Freiheitsgrad im klassischen Modell ist gegeben durch 
-$E = \frac{1}{2}k_B T$. Dabei ist $k_B$ die Boltzsmann-Konstante und $T$ die Temperatur. Die mittlere Energie eines Atoms in drei Dimensionen beträgt also 
+Die Wärmekapazität ist definiert als die Wärmemenge $\Delta Q$, die benötigt wird, um einen Festkörper um einen Betrag $\Delta T$ zu erwärmen.
 \begin{equation}
-    E = E_{\text{kin}} + E_{\text{pot}} = \frac{3}{2}k_B T + \frac{3}{2}k_B T = 3k_B T.
+	\text{C} =  \frac{\Delta Q}{\Delta T} \,.
+	\label{eq:C-Def}
 \end{equation}
-Bei einem Mol in einem Festkörper ist die innere Energie 
+Da dies anhängig von der betrachteten Stoffmenge ist, wird C meistens auf die Stoffmenge 1 mol bezogen. So lassen sich unterschiedliche Materialien miteinander vergleichen. Diese meterialbezogenen Werte werden als spezifische Wärmekapazität bezeichnet und werden zur Unterscheidung mit einen kleinen c geschrieben.
+\begin{equation}	
+	c^m = \frac{\Delta Q}{\Delta T \cdot N}
+	\label{eq:c_mol}
+\end{equation}
+Der Zusammenhang zwischen Wärmekapazität und innerer Energie U folgt aus dem 1. Hauptsatz der Thermodynamik:
 \begin{equation}
-    U = 3 \cdot N_L\cdot k_B \cdot T.
+	dQ = dU - dW = dU - pdV \,.
+	\label{eq:1.Haupt}
 \end{equation}
+Dabei ist $dQ$ die dem System zugeführte Wärmemenge, $dU$ die Änderung der inneren Energie und $dW = - pdV$ die am System geleistete Arbeit.
+Die erzielte Änderung der inneren Energie hängt somit davon ab, ob beim Erwärmungsvorgang der Druck $p$, oder das Volumen$V$ konstant gehalten wird.
 
-Hierbei steht $N_L$ für die Loschmidt-Zahl. Somit ist die klassische spezifische Molwärme gegeben durch eine Konstante:
+Bei konstantem Volumen ist die Wärmekapazität somit
 \begin{equation}
-    C_V = \frac{\partial E}{\partial T} \bigg\vert_V = 3 N_L k_B = 3 R
+	C_V = \pdv{Q}{T}\eval_V = \pdv{U}{T}\eval_V \,.
+	\label{eq:cv_algemein}
 \end{equation}
-In der klassischen Betrachtung ist die Molwärme also sowohl Material als auch Temperaturunabhängig. Diese Eigenschaft nennt man das Dulong-Petit-Gesetz.
-\subsection{Einstein-Gesetz}
-\label{sec:einstein}
+Daraus ergibt sich sich eine direkte Verbindung zwischen der inneren Energie des Festkörpers und der Wärmekapazität bei konstantem Volumen. Da allerdings dieser Vorgang experimentell schwer umzusetzen ist wird häufig die Wärmekapazität bei konstantem Druck gemessen:
+\begin{equation}
+	C_p = \pdv{Q}{T}\eval_p \,.
+	\label{eq:cp_algemein}
+\end{equation}
+Die beiden Werte hängen über folgende Beziehung zusammen:
+\begin{equation}
+	C_p - C_V = 9 \alpha^2 \kappa V_0 T \,,
+\end{equation}
+mit dem linearen Ausdehnungskoeffizienten $\alpha$, dem Kompressionsmodul $\kappa$ und den Molvolumem $V_0$.
 
-Das Modell von Albert Einstein befasst sich mit einer quantenmechanischen Näherung zur Bestimmung der Molwärme. In dem Einstein-Modell ist die Annahme, 
-dass alle Gitterschwingungen mit der gleichen Frequenz $\omega$ schwingen. Diese Gitterschwingungen werden des Weiteren auch gequantelt betrachtet und besitzen demnach ein 
-Vielfaches von $\hbar \omega$ als Energie. Diese gequantelten Gitterschwingungen werden auch Phononen genannt. \\
+\subsection{Klassische Betrachtung}
 
-Die Energien sind im Festkörper boltzmann-verteilt. Dadurch kann die Wahrscheinlichkeit, dass ein Phonon bei thermischem Gleichgewicht bei der Temperatur $T$ die Energie $n \hbar \omega$ besitzt, 
-einfach mit der Formel
+Im klassischen Modell für kristalline Festkörper sind die Atome durch Gitterkräfte an ihren Standort gebunden, führen um diesen aber Schwingungen in allen drei Raumrichtungen  aus. Nach den Gleichverteilungssatz haben diese jeweils eine mittlere potentielle und kinetische Energie von
+\begin{equation}
+	\expval{u_i} = \frac{1}{2}k_B T \,.
+\end{equation}
+Mit $N_A$ Atomen, wobei $N_A$ die Avogadro-Konstante ist, ergibt sich so für den gesamten Festkörper eine mittlere innere Energie von
+\begin{equation}
+	\expval{U} = + 3N_A \cdot 2 \frac{1}{2} k_B T =  3 N_A k_B T \,.
+\end{equation}
+Damit berechnet sich die molare spezifische Wärmekapazität von
+\begin{equation}
+	C_V = 3 N_A k_B = 3 R \,.
+	\label{eq:D-P}
+\end{equation}
+R ist herbei die allgemeine Gaskonstante. Dieses Ergebnis wird als das Gesetz von Dulong-Petit bezeichnet.
+Es besteht weder eine Material- noch eine Temperaturabhängigkeit. Experimentelle Daten zeigen aber,  dass die Wärmekapazität von Festkörpern sehr wohl eine Abhängigkeit von Temperatur und Material aufweisen. Dieser nähert sich aber bei hohen Temperaturen an den Dulong-Petit Wert an. 
+
+\subsection{Quantenmechanische Betrachtung}
+
+Der beobachte Verlauf der Temperaturabhängigkeit der Wärmekapazität kann klassisch nicht beschrieben werden. Bei der quantenmechanischen Betrachtung können die Gitterschwingungen nur noch diskrete Werte von ganzzahligen Vielfachen von $\hbar \omega$, mit $\omega$ die Dispersion der Phononenschwingungen, annehmen. 
+\begin{equation}
+	E_n = \qty(n + \frac{1}{2})\hbar \omega
+\end{equation}
+Bei genügend kleinen Temperaturen gilt $\hbar \omega \gg k_B T$. Damit können die Oszillatoren keine weitere Energie aus den Wärmebad aufnehmen und verbleiben in ihrer Grundschwingung. Die Schwingungsmoden werden so bei abnehmender Temperatur zunehmend eingefroren.
+
+Mit diesen Überlegungen errechnet sich der quantenmechanische Erwartungswert der inneren Energie mit:
 \begin{align}
-    \label{eqn:wn}
-    W(n) = \exp{\left( - \frac{n \hbar \omega}{k_B T} \right)}
+	\expval{U} &= 3N \frac{\sum_n E_n e^{-\beta E_n}}{\sum_n e^{-\beta E_n} }  \\
+			& = 3N \hbar \omega \qty(\frac{1}{2} + \frac{1}{\exp{\frac{\hbar\omega}{k_B T}}-1}) \,.
 \end{align}
-berechnet werden. \\
-Der Erwartungswert $X$ der Energie wird berechnet, indem die über alle $n$ zwischen $0$ und $\infty$ mit den entsprechenden $W(n)$ Koeffizienten summiert wird. 
-Diese Rechnung ergibt
-\begin{align}
-    X_{\text{Einstein}} = \frac{\hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T}\right) -1} .
-\end{align} 
-Die mittlere Energie im Einstein-Modell beträgt also 
-\begin{align}
-    \langle u \rangle_{\text{Einstein}} = \frac{X}{Z} = \frac{\hbar \omega }{\exp \left( \frac{\hbar \omega}{k_B T}\right)}.
-\end{align}
-Die Zustandssumme $Z$ gibt dabei die Summe der gesamten Zustände an. Abschließend ergibt sich die Molwärme zu 
-\begin{align}
-    \label{eqn:moleinstein}
-    (C_V)_{\text{Einstein}} = 3 R \left( \frac{\hbar \omega}{k_B T}\right)^2 \frac{\exp \left(\frac{\hbar \omega}{k_B T}\right)}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)^2}.
-\end{align}
-Es ist festzustellen, dass die Molwärme im Einstein-Modell gegen den klassischen Wert $3 R$ bei hohen Temperaturen konvergiert. Bei niedrigen Temperaturen also $T \rightarrow 0$ läuft die Molwärme jedoch gegen $0$.
-\subsection{Debye-Gesetz}
+Letzteres ist dabei eine Form der Bose-Einstein-Verteilung.
+
+\subsubsection{Einstein-Näherung}
+
+In der Einstein-Näherung wird die Annahme getroffen, dass alle 3N Eigenschwingungen des Gitters die einheitliche Frequenz $\omega_E$ haben. Damit ist die mittlere innere Energie
+\begin{equation}
+	\expval{U} =  3N \hbar \omega_E \qty(\frac{1}{2} + \frac{1}{\exp{\frac{\hbar\omega_E}{k_B T}}-1}) \,.
+\end{equation}
+Mit Einführung der Einstein-Temperatur
+\begin{equation}
+	\Theta_E = \frac{\hbar\omega_E}{k_B}
+\end{equation}
+ist die Wärmekapazität nach Einstein somit:
+\begin{equation}
+	C_V^E = 3N k_B \qty(\frac{\Theta_E}{T})^2 \frac{\exp(\Theta_E/T)}{[\exp(\Theta_E/T)-1]^2} \,.
+	\label{eq:Cv_Einstein}
+\end{equation}
+%
+Für diese ergibt sich in der Näherung von hohen und tiefen Temperaturen:
+\begin{equation}
+	C_V^E = \begin{cases}
+		 3N_A k_B \qty(\frac{\Theta_E}{T})^2 e^{-\Theta_E/T} &\quad T \ll\Theta_E \\
+		3N_A k_B &\quad T \gg \Theta_E 		
+	\end{cases}
+\end{equation}
+Für hohe Temperaturen erhält man wieder das Dulong-Petit-Gesetz. Bei tiefen Temperaturen tritt zwar eine Abnahme der Wärmekapazität ein, allerdings unterscheidet diese sich immer noch von den experimentell erhaltenden Daten, da diese häufig mit T$^3$ abfallen.
+Diese Abweichung lässt sich damit erklären, dass die gewählte konstante Dispersion eher den Verlauf der optischen Phononen entspricht, bei niedrigen Temperaturen allerdings die akustischen Phononen dominieren.
+
+\begin{figure}
+  \centering
+  \includegraphics{build/Phononen.jpg}
+  \caption{Darstellung der Dispersionsrelation von Phononen in der ersten Brillouin-Zone. \cite{GrossMarx+2018}}
+  \label{fig:Phononen}
+\end{figure}
+
+\subsubsection{Debye-Näherung}
 \label{sec:debye}
+Bei der Debye-Näherung werden alle Phononenzweige durch drei Zweige mit linearer Dispersion von $\omega_i=v_iq$ genähert. Diese Annahme passt gut zu den bei tiefen Temperaturen überwiegenden drei Zweigen der akustischen Phononen.
 
-Im Vergleich zum Einstein-Modell, wird im debyeschem Modell angenommen, dass Phononen bis zu einer Grenzfrequenz $\omega_D$ eine Verteilung von Frequenzen besitzen können. 
-Eine Grenzfrequenz existiert, weil ein Festkörper eine endlich große Dimension und somit auch nur endlich viele Eigenschwingungen hat. Diese Grenzfrequenz wird Debye-Frequenz genannt. Es wird auch angenommen, 
-dass bis zu der Grenzfrequenz eine lineare Dispersionsrelation, also $\omega = \nu_s k$, gegeben ist. 
-Die Anzahl der Eigenschwingungen beträgt $3 N_L$ wobei $N_L$ die Loschmidt-Konstante darstellt. Die Loschmidt-Konstante gibt die Anzahl $N$ der Moleküle pro Volumen $V$ eines idealen Gases 
-bei einer Temperatur von $T = 273, \! 15\, \si{\kelvin}$ und einem Druck von $p = 101, \! 325 \, \si{\kilo\pascal}$ an also:
-\begin{align}
-    N_L = \frac{N}{V} = \frac{p}{k_B T}.
-\end{align}
-Wird die Frequenzverteilung $Z(\omega)$ bis zu der Grenzfrequenz $\omega_D$ integriert, so sollte also $3 N_L$ rauskommen
-\begin{align}
-    \label{eqn:Z_integral}
-    \int_{\, 0}^{\omega_D} Z(\omega) d\omega = 3 N_L .
-\end{align}
-Um Einblicke aus diesem Integral zu erhalten, ist es nützlich die Zustandsdichte $Z(\omega)$ im $k$-Raum zu schreiben. Das geht über die Umformung 
-\begin{align}
-    Z(\omega) d\omega &= Z(k) d k\\
-    \Leftrightarrow \, \, \, \, \, \, \, \, \, \, \, \, Z(\omega) &= Z(k) \frac{d k}{d\omega}
-\end{align}
-Die Zustandsdichte im $k$-Raum ist im dreidimensionalem Fall immer 
-\begin{align}
-    Z(k) = \frac{L^3}{\left(2 \pi\right)^3} \frac{4 \pi k^3}{3} = \frac{V}{8 \pi^3} \frac{4 \pi k^3}{3}
-\end{align}
-also ist die Zustandsdichte im Frequenzraum
-\begin{align}
-    \label{eqn:Z}
-    Z(\omega) d \omega &= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_{ges}} \right) d\omega= \frac{L^3}{2 \pi^2} \omega^2 \left(\frac{1}{\nu^3_l} + \frac{2}{\nu^3_{tr}}\right) d\omega \\
-    Z(\omega) d \omega &= \frac{9 N_L}{\omega_D^3} \omega^2 d \omega.
-\end{align}
+Zudem wird statt einer Summation über alle Wellenvektoren q eine Integration über eine Kugel mit Radius $q_D$ durchgeführt. Dabei wird der Debey-Wellenvektor $q_D$ so gewählt, dass genau N Wellenvektoren im Integral enthalten sind.
+Mit den Wissen, dass im q-Raum  ein Zustand das Volumen $(2\pi/L)^2$ einnimmt kann somit $q_D$ bestimmt werden auf
+\begin{equation}
+	q_D = \qty(6\pi \frac{N}{V})^{1/3} \,.
+	\label{eq:D-q}
+\end{equation}
+Analog erhält man so eine Debey-Frequenz von
+\begin{equation}
+	\omega_{D,i} = q_D v_i
+	\label{eq:D-Freg}
+\end{equation}
+mit $v_i$ als Schallgeschwindigkeit des i-ten Dispersionszweiges. 
+Die Zustandsdichte eines Dispersionszweiges ist gegeben mit
+\begin{equation}
+	D_i(\omega)= \frac{V}{2\pi^2}\frac{q^2}{v_i} =   \frac{V}{2\pi^2}\frac{\omega^2}{v_i^3} \,.
+	\label{eqn:Z}
+\end{equation}
+Die Größe von $\omega_D$ ist zudem auch dadurch gegeben, dass
+\begin{equation}
+	\int D(\omega) \dd\omega = 3 N
+	\label{eq:}
+\end{equation}
+ergeben muss.
+Mit der Einführung der Debey-Temperatur
+\begin{equation}
+	\Theta_D = \frac{\hbar\omega_D}{k_B} \,,
+	\label{eq:D-Temp}
+\end{equation}
+sowie der Substitution
+\begin{equation}
+	x=\frac{\hbar v_s q}{k_B T} \,,
+\end{equation}
+ergibt sich somit 
+\begin{equation}
+	\label{eqn:udebye}
+	C_V^D = 9Nk_B \qty(\frac{T}{\Theta_D})^3 \int_0^{\Theta_D/T} \frac{x^4e^x \dd x}{(e^x-1)^2} \,.
+\end{equation}
+Die so erhaltene Wärmekapazität wird in der Näherung für hohe Temperaturen wieder das erwartete Dulong-Petit-Gesetz, zudem zeigt sie das gewünschte $T^3$ Verhalten bei tiefen Temperaturen.
 
-Die Gesamtenergie $U$ ergibt sich dann durch das Integrieren über alle Frequenzen
-
-\begin{align}
-    \label{eqn:udebye}
-    U &= \int_{\, 0}^{\omega_D} \frac{Z(\omega) \, \hbar \omega}{\exp \left( \frac{\hbar \omega}{k_B T} - 1 \right)} d\omega.
-\end{align}
-
-Abschließend ergibt sich die Molwärme zu 
-
-\begin{align}
-    C_{V, \text{Debye}} &= \frac{d}{d T} \frac{9 N_L}{\omega_D^3} \int_{\, 0}^{\omega_D} \frac{\hbar \omega^3}{\exp \left(\frac{\hbar \omega}{k_B T} -1 \right)} d \omega.
-\end{align}
-
-Damit lässt sich die innere Energie wie folgt berechnen:
-\begin{align}
-    U =  \int_{\, 0}^{\omega_D} Z(\omega) \langle n(\omega)\rangle \hbar \omega d \omega=  \int_0^{\omega_D} \frac{Z(\omega) \hbar \omega d \omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}.
-\end{align}
-wobei $\langle n(\omega)\rangle$ die Bose-Einstein-Statistik angibt. Die Ableitung nach $T$ der inneren Energie ergibt die Lösung für die Molwärme. Die Molwärme im Debye-Modell hat die Form
-\begin{align}
-    C_{V,\text{Debye}}= \frac{d}{d T}\frac{9 N_L}{\omega_D^3} \int_{\, 0}^{\omega_D} \frac{\omega^3 d\omega}{\left(\exp \left(\frac{\hbar \omega}{k_B T}\right) -1 \right)}
-\end{align}
-Durch Einsetzen der Substitution 
-\begin{align}
-    \label{eqn:debyesubst}
-    x = \frac{\hbar \omega}{k_B T} \\  \frac{\theta_D}{T} = \frac{\hbar \omega_D}{ k_B T}
-\end{align}
-wird die Molwärme zu
-\begin{align}
-    C_{V,\text{Debye}} = 9 R \left(\frac{\theta_D}{T}\right)^3 \int_0^{\frac{\theta_D}{T}} \frac{x^4 \exp \left(x\right)}{ \left(\exp(x) -1\right)^2}.
-\end{align}
-Das $\theta_D$ wird die Debye-Temperatur genannt. Die Debye-Temperatur $\theta_D$ ist ein materialabhängiger Parameter. Sie gibt im Debye Modell die Temepratur an, bei der alle Zustände, die möglich sind, besetzt werden. Die Molwärme im Debye-Modell bei großen Temperaturen also $x<<1$ konvergiert gegen $3 R$, die klassischen Näherung. Bei kleinen Temperaturen ist die Molwärme 
-jedoch proportional zu $T^3$. 
-\subsection{Weitere Anmerkungen}
-Es ist wichtig zu erwähnen, dass die Leitungselektronen im Festkörper ebenfalls einen Beitrag zur Molwärme leisten. Vor allem bei niedrigen Temperaturen spielt der Einfluss der Leitungselektronen eine größere Rolle. 
-Die Elektronen sind nach der Fermi-Dirac-Statistik verteilt. Daraus folgt, dass der Einfluss auf die Molwärme der Leitungselektronen proportional zu $T$ sein muss. \\
+Die eingeführte Debye-Temperatur $\Theta_D$ stellt ein Maß für die Größe der im Material vorkommenden Phononenfrequenzen da. Zudem gibt sie auch einen Grenzbereich zwischen klassischer und quantenmechanischer Betrachtung eines Festkörpers an. Für Temperaturen kleiner der Debye-Temperatur ist eine quantenmechanische Betrachtung notwendig, da einige Moden eingefroren sind. Für Temperaturen darüber kann klassisch gerechnet werden.

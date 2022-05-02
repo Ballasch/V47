@@ -1,20 +1,25 @@
-\section{Aufbau und Durchführung}
-\label{sec:AundD}
-
-\subsection{Aufbau}
+\section{Aufbau}
 \label{sec:Aufbau}
 
-Der Aufbau des Experiments ist in Abbildung \ref{fig:aufbau} dargestellt. Für den Versuch wird ein Dewar-Gefäß verwendet, in dem im Laufe des Experiments flüssiger Stickstoff gefüllt wird, damit der
-Rezipient gekühlt werden kann. Im Rezipienten befindet sich die zu untersuchende Kupferprobe. In der Kupferprobe befindet sich eine Heizwicklung, womit die Probe erhitzt werden kann. Um die Kupferprobe befindet sich noch ein Kupfer-Zylinder, der ebenfalls über eine Heizwicklung verfügt. Beide Heizwicklungen können jeweils getrennt voneinander über eine Stromversorgung bzw. ein Konstantstromgerät mit elektrischer Energie versorgt werden. Zusätzlich befindet sich im Zylinder und an der Probe jeweils ein PT-100 Messwiderstand über den mit Hilfe eines Ohmmeters der Widerstand gemessen werden kann. Der Widerstand varriert mit der Temperatur, dadurch kann aus dem Widerstand auf die Temperatur geschlossen werden. Außerdem ist der Rezipient noch mit einer Vakuumpumpe und einer Heliumflasche inklusive Absperrhahn und Reduzierventil verbunden. 
+Die schematische Darstellung des Versuchsaufbau ist in Abbildung \ref{fig:aufbau} zu sehen. An der Probe, ein Kupferblock mit einer Masse von \SI{342}{\gram},  ist eine Heizwickel sowie ein Pt-100 Messwiederstand zur Bestimmung der Temperatur angebracht.
+Mit der Funktion
+\begin{equation}
+	T = 0,00134 R^2 + 2,296 R -243,02
+	\label{eq:pt100}
+\end{equation}
+lässt sich aus dessen Widerstands die Temperatur in °C bestimmen.
+ Sie befindet sich in einem Rezipienten, welcher ebenfalls geheizt werden, sowie evakuiert und mit Helium gefüllt werden kann. Der Rezipient befindet sich in einem Dewar-Gefäß, das zu Beginn des Versuches mit flüssigen Stickstoff befüllt wird. Für den Messvorgang sind die Messwiderstände mit einem Ohmmetern verbunden.
+Zur Bestimmung der zugeführten Wärmemenge sind die Heizwickeln an Volt- bzw. Ampermeter angeschlossen.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{build/Aufbau.PNG}
-    \caption{Schematischer Aufbau des Versuchs. \cite{Anleitung}}
-    \label{fig:aufbau}
+\begin{figure}
+  \centering
+  \includegraphics{build/Aufbau.jpg}
+  \caption{Schematische Darstellung des Versuchsaufbau.\cite{manual}}
+  \label{fig:aufbau}
 \end{figure}
 
-\subsection{Durchführung}
-\label{sec:Durchfuehrung}
 
-Zu Beginn wird der Rezipient mit Hilfe der Vakuumpumpe evakuiert. Nach der Evakuierung wird der Rezipient mit Helium gefüllt, damit beim Abkühlen ein möglichst großer Wärmefluss stattfinden kann, denn Helium hat eine hohe thermische Leitfähigkeit. Anschließend wird das Dewar-Gefäß mit flüssigen Stickstoff gefüllt und der Rezipient wird bis zu einer Temperatur von $80 \, \mathrm{K}$ abgekühlt. Wenn sowohl die Probe als auch der Zylinder die gewünschte Temperatur erreicht haben, wird der Rezipient wieder evakuiert, damit möglichst keine Konvektion mehr stattfinden kann und die Messung kann beginnen. Dazu wird die Probe über ein Konstantstromgerät beheizt und die Zeitmessung wird gestartet. Damit keine Wärmeverluste durch Konduktion von der Probe zum Zylinder stattfinden, sollte die Temperatur zwischen Zylinder und Probe immer identisch gehalten werden. Dafür muss die Leistung für die Heizwicklung vom Zylinder so varriert werden, dass die beiden Temperaturen sich nicht unterscheiden. Also sollte die Stromversorgung zur Gehäuseheizung stetig angepasst werden. Im Kontext der Durchführung bedeutet dies, dass der Widerstand der beiden Messwiderstände identisch gehalten werden sollte. Während der Messung sollte in regelmäßigen Abständen die Werte der beiden Widerstände, die aktuelle Messzeit, die Heizspannung und der Heizstrom für die Heizwicklung der Probe notiert werden. Wichtig ist zudem, dass die Spannung und der Strom der Heizwicklung für die Probe nur direkt nach der Aufnahme eines Messwertes verändert werden darf. Die Starttemperatur für die Messung beträgt $80 \, \mathrm{K}$ und die Endtemperatur $300 \, \mathrm{K}$.
+\section{Durchführung}
+
+Zu Beginn des Versuches wird etwaige Luft, die sich in Rezipienten befinden könnte, abgepumpt. Danach wird der Rezipient mit Helium befüllt. Damit wird sichergestellt das sich kein in der Luft enthaltendes Wasser in Rezipienten befindet und der Wärmeaustausch mit den Wärmebad möglichst gleichmäßig stattfinden kann. Das Dewar-Gefäß wird dann mit flüssigen Stickstoff befüllt. Nachdem die Probe auf ungefähr \SI{40}{\K} abgekühlt ist wird der Rezipient wieder evakuiert um den Wärmeaustausch der Probe mit seiner Umgebung möglichst gering zu halten.
+Zum eigentlichen Messvorgang wird die Probe durch die sie umgebende Heißwickel erhitzt. Die Temperatur wird in gleichmäßigen Abständen von 1:30 Minuten gemessen. Zur Bestimmung der zugefügten Energie wird zudem die Spannung und Stromstärke, die an der Heizwickel anliegt aufgenommen. Um einen Wärmeaustausch mit dem Rezipienten durch Wärmestrahlung zu vermeiden, wird dieser durch eine separate Heizwicklung gleichmäßig mit der Probe erhitzt. 

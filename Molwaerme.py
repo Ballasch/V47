@@ -135,6 +135,7 @@ plt.ylabel(r'$C_V \, / \, \mathrm{J} \, \mathrm{K}^{-1} \mathrm{mol}^{-1}$')
 
 plt.ylim(0,60)
 plt.legend()
-plt.tight_layout()
 plt.grid()
+plt.tight_layout()
+
 plt.savefig('build/C_V.pdf')

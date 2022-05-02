@@ -1,17 +1,30 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
-\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Dulong-Petit-Gesetz}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Einstein-Gesetz}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Debye-Gesetz}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Weitere Anmerkungen}{6}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Aufbau und Durchführung}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Aufbau}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Durchführung}{8}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Bestimmung von $C_p$ und $C_V$}{8}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Klassische Betrachtung}{3}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Quantenmechanische Betrachtung}{4}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.1}Einstein-Näherung}{5}{subsubsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.2}Debye-Näherung}{5}{subsubsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Aufbau}{7}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Durchführung}{9}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Bestimmung von $C_p$ und $C_V$}{9}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Experimentelle Bestimmung der Debye-Temperatur}{15}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Theoretische Bestimmung der Debye-Temperatur}{17}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Diskussion}{18}{section.5}%
-\contentsline {section}{\nonumberline Literatur}{19}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{20}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
