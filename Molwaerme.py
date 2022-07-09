@@ -29,13 +29,19 @@ anzahlDaten = t.size
 R_P = R_P*0.1
 R_G = R_G*0.1
 #Widerstände in Temperatur umrechnen und in K umrechnen mit 0 als Fehler
-T_P = unp.uarray(0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15, 0)
-T_G = unp.uarray(0.00134 * (R_G * 1000)**2 + 2.296 * (R_G * 1000) - 243.02 + 273.15, 0)
-
+T_P = 0.00134 * (R_P * 1000)**2 + 2.296 * (R_P * 1000) - 243.02 + 273.15
+T_G = 0.00134 * (R_G * 1000)**2 + 2.296 * (R_G * 1000) - 243.02 + 273.15
+T_P = unp.uarray(T_P, T_P*0.002)
+T_G = unp.uarray(T_G, T_G*0.002)
 #Mittlere Temperatur zwischen Gefäß und Probe bestimmen
 T = (T_P + T_G) / 2
 
-#print(T_P, T_G, T)
+
+#Mit Fehler für die Berechnung von C_P
+#T2 = unp.uarray(T,0.002*T )
+U2 = unp.uarray(U, U*0.1)
+I2 = unp.uarray(I, I*0.1)
+t2 = unp.uarray(t, 5)
 
 #alpha bestimmen mit T
 alpha = - ufloat(8.2, 0.7) * 10**-9 * T**4 + ufloat(7.4, 0.5) * 10**-6 * T**3 - ufloat(2.5, 0.1) * 10**-3 * T**2 + ufloat(0.41, 0.02) * T - ufloat(11.3, 0.6)
@@ -50,18 +56,19 @@ C_v_plot = unp.uarray(err0, err0)
 
 #C_p bestimmen (Formel: U * I * delta_t * M / m / delta_T)
 for x in range(anzahlDaten-1):
-    C_p[x] = U[x] * I[x] * 10**-3 * (t[x+1] - t[x]) * 60 * M / m / (T[x+1] - T[x])
+    C_p[x] = U[x] * I[x] * 10**-3 * (t[x+1] - t[x]) * 60 * M / m / (T_P[x+1] - T_P[x])
+
 
 
 
 #C_v bestimmen
 for x in range(anzahlDaten-1):
-    C_v[x] = C_p[x] - 9 * (alpha[x+1] * 10**-6)**2 * k * 10**9 * T[x+1] * V
+    C_v[x] = C_p[x] - 9 * (alpha[x+1] * 10**-6)**2 * k * 10**9 * T_P[x+1] * V
 #    T_plot[x] = T[x+1]
 
 
 
-writeTable = np.array([t,np.around(R_P, decimals=3), np.around(R_G, decimals=3), np.around(unp.nominal_values(T_P), decimals=3), np.around(unp.nominal_values(T_G), decimals=3), np.around(unp.nominal_values(T), decimals=3), np.around(U, decimals=3), np.around(I, decimals=3), np.around(unp.nominal_values(C_p), decimals=3), np.around(unp.nominal_values(C_v), decimals=3)])
+writeTable = np.array([t,np.around(R_P, decimals=4), np.around(R_G, decimals=4), np.around(unp.nominal_values(T_P), decimals=3), np.around(unp.nominal_values(T_G), decimals=3), np.around(unp.nominal_values(T), decimals=3), np.around(U, decimals=3), np.around(I, decimals=3), np.around(unp.nominal_values(C_p), decimals=3), np.around(unp.nominal_values(C_v), decimals=3)])
 with open('datendat-copy.csv', 'w') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(['t','R_P', 'R_Z', 'T_P', 'T_Z', 'T',  'U', 'I', 'C_p', 'C_V'])

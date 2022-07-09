@@ -539,9 +539,6 @@ INPUT ./datendat-copy-cut3.csv
 INPUT ./build/C_V.pdf
 INPUT ./build/C_V.pdf
 INPUT ./build/C_V.pdf
-INPUT ./build/C_V_gefiltert.pdf
-INPUT ./build/C_V_gefiltert.pdf
-INPUT ./build/C_V_gefiltert.pdf
 INPUT /home/cihad/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /home/cihad/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /home/cihad/.local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm

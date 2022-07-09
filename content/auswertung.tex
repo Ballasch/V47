@@ -77,7 +77,8 @@ und folgenden Plot:
     \label{fig:alpha_plot}
 \end{figure}
 
-Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $C_V$ in Abhängigkeit von der Temperatur $T$ mit Formel \eqref{eq:C_V} berechnet werden. Die Werte für $C_p$ und $C_V$ sind in den Tabellen \ref{tab:C}, \ref{tab:C2} und \ref{tab:C3} zu sehen.
+Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $C_V$ in Abhängigkeit von der Temperatur $T$ mit Formel \eqref{eq:C_V} berechnet werden. Die Werte für $C_p$ und $C_V$ sind in den Tabellen \ref{tab:C}, \ref{tab:C2} und \ref{tab:C3} zu sehen. Es ist zu bedenken, dass die Temperaturen jeweils einen Fehler von $ 0.2 \%$ der Skala besitzen. 
+Die Fehler konnten wegen dem mangelnden Platz nicht in der Tabelle angegeben werden.
 
 %Tabelle einfügen mit R_P, R_Z, T_P, T_Z, T, t, U, I, C_p, C_V und \label{tab:C} hier einfügen
 \begin{table}
@@ -85,7 +86,7 @@ Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $
     \caption{\textbf{Teil 1/3} der Messdaten und Berechnungen für Bestimmung von $C_p$ und $C_V$. }
     \csvreader[tabular = c c c c c c c c|c c,
     head=true,
-    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\milli\ampere}$ &$T_Z \:/\: \si{\milli\ampere}$ & $ \langle T\rangle \:/\: \si{\milli\ampere}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
+    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\kelvin}$ &$T_Z \:/\: \si{\kelvin}$ & $ \langle T\rangle \:/\: \si{\kelvin}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
     late after line= \\]
     {datendat-copy-cut1.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv& \csvcolvi& \csvcolvii & \csvcolviii & \csvcolix & \csvcolx}
     \label{tab:C}
@@ -95,7 +96,7 @@ Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $
     \caption{\textbf{Teil 2/3} der Messdaten und Berechnungen für Bestimmung von $C_p$ und $C_V$. }
     \csvreader[tabular = c c c c c c c c|c c,
     head=true,
-    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\milli\ampere}$ &$T_Z \:/\: \si{\milli\ampere}$ & $ \langle T\rangle \:/\: \si{\milli\ampere}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
+    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\kelvin}$ &$T_Z \:/\: \si{\kelvin}$ & $ \langle T\rangle \:/\: \si{\kelvin}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
     late after line= \\]
     {datendat-copy-cut2.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv& \csvcolvi& \csvcolvii & \csvcolviii & \csvcolix & \csvcolx}
     \label{tab:C2}
@@ -105,7 +106,7 @@ Mit Hilfe von dieser Ausgleichsfunktion in Abbildung \ref{fig:alpha_plot} kann $
     \caption{\textbf{Teil 3/3} der Messdaten und Berechnungen für Bestimmung von $C_p$ und $C_V$. }
     \csvreader[tabular = c c c c c c c c|c c,
     head=true,
-    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\milli\ampere}$ &$T_Z \:/\: \si{\milli\ampere}$ & $ \langle T\rangle \:/\: \si{\milli\ampere}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
+    table head=$t \:/\: \si{\minute}$ & $R_P\:/\: \si{\kilo\ohm}$ &  $R_Z \:/\: \si{\kilo\ohm}$ &$T_P \:/\: \si{\kelvin}$ &$T_Z \:/\: \si{\kelvin}$ & $ \langle T\rangle \:/\: \si{\kelvin}$ &$ U \:/\: \si{\volt}$ & $I \:/\: \si{\milli\ampere}$ & $C_P$&$C_V$\\ \midrule,
     late after line= \\]
     {datendat-copy-cut3.csv}{}{\csvcoli & \csvcolii & \csvcoliii & \csvcoliv& \csvcolv& \csvcolvi& \csvcolvii & \csvcolviii & \csvcolix & \csvcolx}
     \label{tab:C3}
@@ -119,15 +120,16 @@ Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
     \label{fig:C_V}
 \end{figure}
 
-In Abbildung \ref{fig:C_V} ist zu erkennen, dass es bei der Messung einige Messfehler aufgetreten sind. Deswegen werden die Werte Nummer 4, 5 und 21 aus Tabelle \ref{tab:C} als Messfehler herausgenommen und erneut in einem Diagramm gegen die Temperatur $T$ aufgetragen.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{build/C_V_gefiltert.pdf}
-    \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken und ohne Ausreißer.}
-    \label{fig:C_V_gefiltert}
-\end{figure}
-
-In den folgenden Abschnitten wird auch nur mit den Werten von $C_V$ aus Abbildung \ref{fig:C_V_gefiltert} gerechnet.
+%In Abbildung \ref{fig:C_V} ist zu erkennen, dass es bei der Messung einige Messfehler aufgetreten sind. Deswegen werden die Werte Nummer 4, 5 und 21 aus Tabelle \ref{tab:C} als Messfehler herausgenommen und erneut in einem Diagramm gegen die Temperatur $T$ aufgetragen. 
+%Wichtig zu beobachten ist der wllenförmige Verlauf der Messwerte. Die Wellenform entsteht durch das erneute Abkühlen durch Stickstoff während der Messungen. 
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.8\textwidth]{build/C_V_gefiltert.pdf}
+%    \caption{$C_V$ in Abhängigkeit von $T$ mit Fehlerbalken und ohne Ausreißer.}
+%    \label{fig:C_V_gefiltert}
+%\end{figure}
+%
+%In den folgenden Abschnitten wird auch nur mit den Werten von $C_V$ aus Abbildung \ref{fig:C_V_gefiltert} gerechnet.
 
 \subsection[Experimentelle Bestimmung der Debye-Temperatur]{Experimentelle Bestimmung der Debye-Temperatur $\theta_D$}
 \label{sec:debye_temp}
@@ -149,7 +151,7 @@ Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ f
 Die verschiedenen Werte für die Debye-Temperatur $\theta_D$ ergeben gemittelt:
 
 \begin{equation*}
-    \theta_D = (545.5 \pm 58.6) \, \mathrm{K}
+    \theta_D = (334.36 \pm 23.76) \, \mathrm{K}
     \label{eq:debye}
 \end{equation*}
 

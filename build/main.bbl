@@ -163,19 +163,24 @@
       \endverb
     \endentry
     \entry{V0}{article}{}
-      \name{author}{1}{}{%
-        {{hash=99966849ae0cc3c5656c5199f55bf391}{%
-           family={Richard\bibnamedelimb A.\bibnamedelimi Robie},
-           familyi={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={Philip\bibnamedelimb M.\bibnamedelimi Bethke},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      \name{author}{2}{}{%
+        {{hash=4874639e80a2a87221a158be90fc0fab}{%
+           family={Robie},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=01efabe1b638bbe9e55f179a67de19c2}{%
+           family={Bethke},
+           familyi={B\bibinitperiod},
+           given={Philip\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{99966849ae0cc3c5656c5199f55bf391}
-      \strng{fullhash}{99966849ae0cc3c5656c5199f55bf391}
-      \strng{bibnamehash}{99966849ae0cc3c5656c5199f55bf391}
-      \strng{authorbibnamehash}{99966849ae0cc3c5656c5199f55bf391}
-      \strng{authornamehash}{99966849ae0cc3c5656c5199f55bf391}
-      \strng{authorfullhash}{99966849ae0cc3c5656c5199f55bf391}
+      \strng{namehash}{0d27db6e83ea65abab58cf98a527147d}
+      \strng{fullhash}{0d27db6e83ea65abab58cf98a527147d}
+      \strng{bibnamehash}{0d27db6e83ea65abab58cf98a527147d}
+      \strng{authorbibnamehash}{0d27db6e83ea65abab58cf98a527147d}
+      \strng{authornamehash}{0d27db6e83ea65abab58cf98a527147d}
+      \strng{authorfullhash}{0d27db6e83ea65abab58cf98a527147d}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -183,9 +188,9 @@
       \field{journaltitle}{United States department of the interior geological survey}
       \field{month}{10}
       \field{title}{Molar Volumes and Densities of Minerals}
-      \field{urlday}{26}
-      \field{urlmonth}{6}
-      \field{urlyear}{2021}
+      \field{urlday}{9}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
       \field{volume}{1}
       \field{year}{1983}
       \field{urldateera}{ce}
@@ -220,9 +225,9 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{2018 CODATA Value: reduced Planck constant}
-      \field{urlday}{26}
-      \field{urlmonth}{6}
-      \field{urlyear}{2021}
+      \field{urlday}{9}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://physics.nist.gov/cgi-bin/cuu/Value?hbar
