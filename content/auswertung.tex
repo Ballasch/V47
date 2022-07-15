@@ -24,7 +24,7 @@ Um die gemessenen Pt-100-Widerstände in die entsprechenden Temperaturen umzurec
     T = 0, \! 00134 \, R^2 + 2, \! 296 R - 243, \! 02
 \end{equation}
 
-Für $R$ wird der Widerstand in Ohm eingesetzt und die sich daraus ergebende Temperatur $T$ besitzt die Einheit °C. Anschließend wird die Temperatur von der Probe $T_P$ und dem Zylinder $T_Z$ gemittelt und mit der gemittleten Temperatur $T$ wird im Folgenden gerechnet. 
+Für $R$ wird der Widerstand in Ohm eingesetzt und die sich daraus ergebende Temperatur $T$ besitzt die Einheit °C. Anschließend wird die Temperatur von der Probe $T_P$ und dem Zylinder $T_Z$ gemittelt und mit der gemittelten Temperatur $T$ wird im Folgenden gerechnet. 
 
 Aus $C_p$ lässt sich mit Formel \eqref{eq:C_V} $C_V$ bestimmen:
 
@@ -134,7 +134,14 @@ Diese Werte in einem Diagramm aufgetragen gegen die Temperatur $T$ ergibt:
 \subsection[Experimentelle Bestimmung der Debye-Temperatur]{Experimentelle Bestimmung der Debye-Temperatur $\theta_D$}
 \label{sec:debye_temp}
 
-Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ für eine Temperatur von unter $170 \, \mathrm{K}$ betrachtet. Mit Hilfe der Debye-Funktion aus Quelle \cite{Anleitung} können die Werte für $\frac{\theta_D}{T}$ für die entsprechenden $C_V$ bestimmt werden. $\frac{\theta_D}{T}$ multipliziert mit der entsprechenden Temperatur $T$ ergibt dann die Debye Temperatur $\theta_D$. Die Werte für $T$, $C_V$, $\frac{\theta_D}{T}$ und $\theta_D$ sind in Tabelle \ref{tab:Debye} aufgetragen.
+Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ für eine Temperatur von unter $170 \, \mathrm{K}$ betrachtet. Mit Hilfe der Debye-Funktion aus Quelle \cite{Anleitung} können die Werte für $\frac{\theta_D}{T}$ für die entsprechenden $C_V$ bestimmt werden. $\frac{\theta_D}{T}$ multipliziert mit der entsprechenden Temperatur $T$ ergibt dann die Debye Temperatur $\theta_D$. Die Werte für $T$, $C_V$, $\frac{\theta_D}{T}$ und $\theta_D$ sind in Tabelle \ref{tab:Debye} aufgetragen. Zudem wurden die Werte T und $\theta_D$  in Abbildung \ref{fig:Theta_T} aufgetragen. In den Messwerten lassen sich zwei Geraden erkennen, deren Verlauf mit einer Ausgleichsrechnung der Form a*T+b angenähert wurde.
+
+\begin{align}
+	a_1 &= 5,4 \pm 0.5 \quad b_1 &= -254 \pm 70\\
+	a_2 &= 2,2 \pm 0,1 \quad b_2 &= -91,9 \pm 26
+\end{align}
+
+Wahrscheinlich sind dies zwei akustische Zweige der Dispersion, von denen in unseren Ansatz ausgegangen wird und die wir in folgenden Abschnitt auch als Schallgeschwindigkeit des Kristalls auch heranziehen.
 
 %Tabelle mit T, C_V, theta_D/T, theta_D und \label{tab:Debye} hier einfügen
 \begin{table}
@@ -151,7 +158,7 @@ Zur Bestimmung der Debye Temperatur $\theta_D$ werden nur die Molwärmen $C_V$ f
 Die verschiedenen Werte für die Debye-Temperatur $\theta_D$ ergeben gemittelt:
 
 \begin{equation*}
-    \theta_D = (334.36 \pm 23.76) \, \mathrm{K}
+    \theta_D = (323.43 \pm 24,25) \, \mathrm{K}
     \label{eq:debye}
 \end{equation*}
 
@@ -164,17 +171,11 @@ Der Mittelwertsfehler wurde mit Formel \eqref{eq:mittel} bestimmt.
 
 Dabei ist $\sigma_{\overline{x}}$ der Mittelwertsfehler, $n$ ist die Anzahl der Werte über die gemittelt wird und $\overline{x}$ ist der Mittelwert.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{build/Theta_C_V.pdf}
-    \caption{$\theta_D$ in Abhängigkeit von $C_V$.}
-    \label{fig:Theta_C_V}
-\end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{build/Theta_T.pdf}
-    \caption{$\theta_D$ in Abhängigkeit von $T$.}
+    \caption{$\theta_D$ in Abhängigkeit von $T$ mit eingezeichnete Annäherung der zwei erkennbaren Graden.}
     \label{fig:Theta_T}
 \end{figure}
 
