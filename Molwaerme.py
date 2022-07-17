@@ -67,10 +67,11 @@ C_v = unp.uarray(err0, err0)
 
 #Zeitdifferenz ist ein fester Wert für uns
 t_diff = 1.5
-
+t_diff_fehler = ufloat(1.5,0.11785113019775792) #fehler resultiert aus +/- 5s Fehler bei der Zeitmessung
 #C_p bestimmen (Formel: U * I * delta_t * M / m / delta_T)
+
 for x in range(anzahlDaten-1):
-    C_p[x] = U2[x] * I2[x] * 10**-3 * t_diff * 60 * M / m / (T_P[x+1] - T_P[x])
+    C_p[x] = U2[x] * I2[x] * 10**-3 * t_diff_fehler * 60 * M / m / (T_P[x+1] - T_P[x])
 
 
 
