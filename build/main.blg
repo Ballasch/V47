@@ -1,18 +1,18 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/main.blg'
-[60] biber:340> INFO - === Sat Jul  9, 2022, 19:21:38
-[79] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[139] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
-[153] Biber.pm:4340> INFO - Processing section 0
-[162] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[168] bibtex.pm:1689> INFO - LaTeX decoding ...
-[174] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
-[228] Utils.pm:395> WARN - legacy month field 'aug' in entry 'k_B' is not an integer - this will probably not sort properly.
+[59] biber:340> INFO - === Sun Jul 17, 2022, 14:35:49
+[77] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[137] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
+[151] Biber.pm:4340> INFO - Processing section 0
+[160] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[167] bibtex.pm:1689> INFO - LaTeX decoding ...
+[172] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[229] Utils.pm:395> WARN - legacy month field 'aug' in entry 'k_B' is not an integer - this will probably not sort properly.
 [234] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
 [245] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[245] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[246] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [246] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
 [246] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[256] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[261] bbl.pm:757> INFO - Output to build/main.bbl
-[262] Biber.pm:128> INFO - WARNINGS: 2
+[257] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[262] bbl.pm:757> INFO - Output to build/main.bbl
+[263] Biber.pm:128> INFO - WARNINGS: 2

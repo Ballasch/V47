@@ -558,9 +558,6 @@ INPUT /home/cihad/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /home/cihad/.local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/cihad/.local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./C_v_und_T_neu.csv
-INPUT ./build/Theta_C_V.pdf
-INPUT ./build/Theta_C_V.pdf
-INPUT ./build/Theta_C_V.pdf
 INPUT ./build/Theta_T.pdf
 INPUT ./build/Theta_T.pdf
 INPUT ./build/Theta_T.pdf
